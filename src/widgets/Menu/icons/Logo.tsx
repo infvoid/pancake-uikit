@@ -12,8 +12,8 @@ const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
     <Svg viewBox="0 0 381.54 82.55" {...props}>
     <defs>
         <linearGradient id="lg_14" x1="2.55" y1="43.61" x2="71.49" y2="43.61" gradientTransform="translate(-1.2 5.64) rotate(-0.04)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#fec300"/>
-            <stop offset="1" stop-color="#ffe812"/>
+            <stop offset="0" stopColor="#fec300"/>
+            <stop offset="1" stopColor="#ffe812"/>
         </linearGradient>
         <linearGradient id="lg_14-2" x1="11.98" y1="32.25" x2="53.33" y2="32.25" xlinkHref="#lg_14"/>
         <linearGradient id="lg_14-3" x1="1.19" y1="43.57" x2="43.44" y2="43.57" xlinkHref="#lg_14"/>
