@@ -27,11 +27,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        href: "https://exchange.hubdao.io",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        href: "https://exchange.hubdao.io/#/pool",
       },
     ],
   },
@@ -120,7 +120,7 @@ export const links = [
     items: [
       {
         label: "Voting",
-        href: "https://voting.pancakeswap.finance",
+        href: "https://voting.hubdao.io",
       },
       {
         label: "Github",
@@ -128,7 +128,7 @@ export const links = [
       },
       {
         label: "Docs",
-        href: "https://docs.pancakeswap.finance",
+        href: "https://docs.hubdao.io",
       },
       {
         label: "Blog",
