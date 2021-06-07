@@ -4,7 +4,7 @@ import { SvgProps } from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <Svg viewBox="0 0 280 350" {...props}>
+    <Svg viewBox="0 0 80 80" {...props}>
     <defs>
         <linearGradient id="lg_14" x1="2.55" y1="43.61" x2="71.49" y2="43.61" gradientTransform="translate(-1.2 5.64) rotate(-0.04)" gradientUnits="userSpaceOnUse">
             <stop offset="0" stopColor="#fec300"/>

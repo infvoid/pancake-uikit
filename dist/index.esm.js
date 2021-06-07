@@ -490,7 +490,7 @@ var Icon$10 = function (props) {
 };
 
 var Icon$$ = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 280 350" }, props),
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 80 80" }, props),
         React.createElement("defs", null,
             React.createElement("linearGradient", { id: "lg_14", x1: "2.55", y1: "43.61", x2: "71.49", y2: "43.61", gradientTransform: "translate(-1.2 5.64) rotate(-0.04)", gradientUnits: "userSpaceOnUse" },
                 React.createElement("stop", { offset: "0", stopColor: "#fec300" }),
@@ -3501,7 +3501,7 @@ var templateObject_1$a;
 var PriceLink = styled.a(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
+    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://hecoinfo.com/token/0x7Ee95d49De01D15AEFafc18940B5F9Fe3dA1d811", target: "_blank" },
         React.createElement(Icon$P, { width: "24px", mr: "8px" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
