@@ -1648,10 +1648,7 @@ var PancakeToggle = function (_a) {
         React.createElement(PancakeInput, __assign({ id: props.id || "pancake-toggle", scale: scale, type: "checkbox", checked: checked }, props)),
         React.createElement(PancakeLabel, { scale: scale, checked: checked, htmlFor: props.id || "pancake-toggle" },
             React.createElement("div", { className: "pancakes" },
-                React.createElement("div", { className: "pancake" }),
-                React.createElement("div", { className: "pancake" }),
-                React.createElement("div", { className: "pancake" }),
-                React.createElement("div", { className: "butter" })))));
+                React.createElement("div", { className: "pancake" })))));
 };
 PancakeToggle.defaultProps = {
     scale: scales$4.MD,
@@ -3777,9 +3774,9 @@ var UserBlock = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout;
     var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React.createElement("div", null, account ? (React.createElement(Button, { scale: "sm", variant: "tertiary", onClick: function () {
+    return (React.createElement("div", null, account ? (React.createElement(Button, { id: "Connect-button", scale: "sm", variant: "tertiary", onClick: function () {
             onPresentAccountModal();
-        } }, accountEllipsis)) : (React.createElement(Button, { scale: "sm", onClick: function () {
+        } }, accountEllipsis)) : (React.createElement(Button, { id: "Connect-button", scale: "sm", onClick: function () {
             onPresentConnectModal();
         } }, "Connect"))));
 };
@@ -3973,17 +3970,17 @@ var templateObject_1;
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#1FC7D4",
+    primary: "#7A7A7A",
     primaryBright: "#53DEE9",
     primaryDark: "#0098A1",
     secondary: "#7645D9",
-    success: "#31D0AA",
+    success: "#FDC702",
     warning: "#FFB237",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#303133", borderColor: "#E9EAEB", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#f0f0f0", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#000000", textDisabled: "#BDC2C4", textSubtle: "#303133", borderColor: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
         blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
