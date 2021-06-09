@@ -3155,7 +3155,6 @@ var Icon$c = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
     var textColor = isDark ? "#000000" : "#A28BD4";
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 28 28" }, props),
-        isDark,
         React__default['default'].createElement("path", { fill: "none", stroke: textColor, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: "10", d: "M18,3.445H0L4.765,0", transform: "translate(5 6.16)" }),
         React__default['default'].createElement("path", { fill: "none", stroke: textColor, strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: "10", d: "M18,3.445H0L4.765,0", transform: "translate(23 22.445) rotate(180)" })));
 };
