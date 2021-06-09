@@ -1,4 +1,7 @@
 import React from "react";
 import { SvgProps } from "../../../components/Svg/types";
-declare const Icon: React.FC<SvgProps>;
-export default Icon;
+interface IconProps extends SvgProps {
+    isDark?: boolean;
+}
+declare const _default: React.NamedExoticComponent<IconProps>;
+export default _default;

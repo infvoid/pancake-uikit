@@ -12,7 +12,11 @@ interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
 }
 
-const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
+interface StyledSvgProps extends SvgProps {
+  isDark?: boolean;
+}
+
+const Icons = (IconModule as unknown) as { [key: string]: React.FC<StyledSvgProps> };
 
 const Container = styled.div`
   display: flex;
@@ -22,7 +26,7 @@ const Container = styled.div`
   height: 100%;
 `;
 
-const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
+const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links, isDark }) => {
   const location = useLocation();
 
   // Close the menu when a user clicks a link on mobile
@@ -32,7 +36,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
     <Container>
       {links.map((entry) => {
         const Icon = Icons[entry.icon];
-        const iconElement = <Icon width="24px" mr="8px" />;
+        const iconElement = <Icon isDark={isDark} width="24px" mr="8px" />;
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
 
         if (entry.items) {
