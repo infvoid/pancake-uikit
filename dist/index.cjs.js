@@ -8,6 +8,7 @@ var styledSystem = require('styled-system');
 var get = require('lodash/get');
 var noop = require('lodash/noop');
 var debounce = require('lodash/debounce');
+var reactDom = require('react-dom');
 var reactPopper = require('react-popper');
 var throttle = require('lodash/throttle');
 var reactRouterDom = require('react-router-dom');
@@ -2723,11 +2724,126 @@ var useKonamiCheatCode = function (matchedCodeHandler) {
     }, [matchedCodeHandler]);
 };
 
+var baseColors = {
+    failure: "#ED4B9E",
+    primary: "#7A7A7A",
+    primaryBright: "#53DEE9",
+    primaryDark: "#0098A1",
+    secondary: "#7645D9",
+    success: "#FDC702",
+    warning: "#FFB237",
+};
+var brandColors = {
+    binance: "#F0B90B",
+};
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#f0f0f0", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#000000", textDisabled: "#BDC2C4", textSubtle: "#303133", borderColor: "#E9EAEB", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
+        cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
+        blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
+        violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
+        violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
+    } });
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#100C18", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#191326", input: "#483f5a", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#A28BD4", borderColor: "#524B63", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
+        cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
+        blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
+        violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
+        violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
+    } });
+
+var light$7 = {
+    background: lightColors.backgroundAlt,
+};
+var dark$7 = {
+    background: darkColors.backgroundAlt,
+};
+
+var light$6 = {
+    background: lightColors.backgroundAlt,
+    boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
+    boxShadowActive: shadows.active,
+    boxShadowSuccess: shadows.success,
+    boxShadowWarning: shadows.warning,
+    cardHeaderBackground: {
+        default: lightColors.gradients.cardHeader,
+        blue: lightColors.gradients.blue,
+        violet: lightColors.gradients.violet,
+    },
+    dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
+};
+var dark$6 = {
+    background: darkColors.backgroundAlt,
+    boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
+    boxShadowActive: shadows.active,
+    boxShadowSuccess: shadows.success,
+    boxShadowWarning: shadows.warning,
+    cardHeaderBackground: {
+        default: darkColors.gradients.cardHeader,
+        blue: darkColors.gradients.blue,
+        violet: darkColors.gradients.violet,
+    },
+    dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
+};
+
+var light$5 = {
+    handleBackground: lightColors.backgroundAlt,
+    handleShadow: lightColors.textDisabled,
+};
+var dark$5 = {
+    handleBackground: darkColors.backgroundAlt,
+    handleShadow: darkColors.textDisabled,
+};
+
+var light$4 = {
+    handleBackground: lightColors.backgroundAlt,
+};
+var dark$4 = {
+    handleBackground: darkColors.backgroundAlt,
+};
+
+var light$3 = {
+    handleBackground: lightColors.backgroundAlt,
+};
+var dark$3 = {
+    handleBackground: darkColors.backgroundAlt,
+};
+
+var light$2 = {
+    background: lightColors.backgroundAlt,
+    hover: "#EEEAF4",
+};
+var dark$2 = {
+    background: darkColors.backgroundAlt,
+    hover: "#473d5d",
+};
+
+var light$1 = {
+    background: lightColors.backgroundAlt,
+};
+var dark$1 = {
+    background: darkColors.backgroundAlt,
+};
+
+var light = {
+    background: darkColors.backgroundAlt,
+    text: darkColors.text,
+    boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.2), 0px 4px 12px -8px rgba(14, 14, 44, 0.1)",
+};
+var dark = {
+    background: lightColors.backgroundAlt,
+    text: lightColors.text,
+    boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.2), 0px 4px 12px -8px rgba(14, 14, 44, 0.1)",
+};
+
+var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark$7, colors: darkColors, card: dark$6, toggle: dark$3, nav: dark$2, modal: dark$1, pancakeToggle: dark$5, radio: dark$4, tooltip: dark });
+
+var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light$7, colors: lightColors, card: light$6, toggle: light$3, nav: light$2, modal: light$1, pancakeToggle: light$5, radio: light$4, tooltip: light });
+
 var Arrow = styled__default['default'].div(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n  &,\n  &::before {\n    position: absolute;\n    width: 10px;\n    height: 10px;\n    border-radius: 2px;\n    z-index: -1;\n  }\n\n  &::before {\n    content: \"\";\n    transform: rotate(45deg);\n    background: ", ";\n  }\n"], ["\n  &,\n  &::before {\n    position: absolute;\n    width: 10px;\n    height: 10px;\n    border-radius: 2px;\n    z-index: -1;\n  }\n\n  &::before {\n    content: \"\";\n    transform: rotate(45deg);\n    background: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.tooltip.background;
 });
-var StyledTooltip = styled__default['default'].div(templateObject_2$8 || (templateObject_2$8 = __makeTemplateObject(["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 10;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"], ["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 10;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"])), function (_a) {
+var StyledTooltip = styled__default['default'].div(templateObject_2$8 || (templateObject_2$8 = __makeTemplateObject(["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 101;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"], ["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 101;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.tooltip.background;
 }, function (_a) {
@@ -2742,23 +2858,61 @@ var templateObject_1$j, templateObject_2$8;
 function isTouchDevice() {
     return "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 }
-var useTooltip = function (content, placement, trigger, arrowPadding, tooltipPadding, tooltipOffset) {
-    if (placement === void 0) { placement = "auto"; }
-    if (trigger === void 0) { trigger = "hover"; }
-    var _a = React.useState(null), targetElement = _a[0], setTargetElement = _a[1];
-    var _b = React.useState(null), tooltipElement = _b[0], setTooltipElement = _b[1];
-    var _c = React.useState(null), arrowElement = _c[0], setArrowElement = _c[1];
-    var _d = React.useState(false), visible = _d[0], setVisible = _d[1];
+var invertTheme = function (currentTheme) {
+    if (currentTheme.isDark) {
+        return lightTheme;
+    }
+    return darkTheme;
+};
+var portalRoot = document.getElementById("portal-root");
+var useTooltip = function (content, options) {
+    var _a = options.placement, placement = _a === void 0 ? "auto" : _a, _b = options.trigger, trigger = _b === void 0 ? "hover" : _b, _c = options.arrowPadding, arrowPadding = _c === void 0 ? 16 : _c, _d = options.tooltipPadding, tooltipPadding = _d === void 0 ? { left: 16, right: 16 } : _d, _e = options.tooltipOffset, tooltipOffset = _e === void 0 ? [0, 10] : _e;
+    var _f = React.useState(null), targetElement = _f[0], setTargetElement = _f[1];
+    var _g = React.useState(null), tooltipElement = _g[0], setTooltipElement = _g[1];
+    var _h = React.useState(null), arrowElement = _h[0], setArrowElement = _h[1];
+    var _j = React.useState(false), visible = _j[0], setVisible = _j[1];
+    var isHoveringOverTooltip = React.useRef(false);
+    var hideTimeout = React.useRef();
     var hideTooltip = React.useCallback(function (e) {
-        e.stopPropagation();
-        e.preventDefault();
-        setVisible(false);
-    }, []);
+        var hide = function () {
+            e.stopPropagation();
+            e.preventDefault();
+            setVisible(false);
+        };
+        if (trigger === "hover") {
+            if (hideTimeout.current) {
+                window.clearTimeout(hideTimeout.current);
+            }
+            if (e.target === tooltipElement) {
+                isHoveringOverTooltip.current = false;
+            }
+            if (!isHoveringOverTooltip.current) {
+                hideTimeout.current = window.setTimeout(function () {
+                    if (!isHoveringOverTooltip.current) {
+                        hide();
+                    }
+                }, 100);
+            }
+        }
+        else {
+            hide();
+        }
+    }, [tooltipElement, trigger]);
     var showTooltip = React.useCallback(function (e) {
         e.stopPropagation();
         e.preventDefault();
         setVisible(true);
-    }, []);
+        if (trigger === "hover") {
+            if (e.target === targetElement) {
+                // If we were about to close the tooltip and got back to it
+                // then prevent closing it.
+                clearTimeout(hideTimeout.current);
+            }
+            if (e.target === tooltipElement) {
+                isHoveringOverTooltip.current = true;
+            }
+        }
+    }, [tooltipElement, targetElement, trigger]);
     var toggleTooltip = React.useCallback(function (e) {
         e.stopPropagation();
         setVisible(!visible);
@@ -2839,23 +2993,24 @@ var useTooltip = function (content, placement, trigger, arrowPadding, tooltipPad
     // even on the iPhone 5 screen (320px wide), BUT in the storybook with the contrived example ScreenEdges example
     // iPhone 5 behaves differently overflowing beyound the edge. All paddings are identical so I have no idea why it is,
     // and fixing that seems like a very bad use of time.
-    var _e = reactPopper.usePopper(targetElement, tooltipElement, {
+    var _k = reactPopper.usePopper(targetElement, tooltipElement, {
         placement: placement,
         modifiers: [
             {
                 name: "arrow",
-                options: { element: arrowElement, padding: arrowPadding || 16 },
+                options: { element: arrowElement, padding: arrowPadding },
             },
-            { name: "offset", options: { offset: tooltipOffset || [0, 10] } },
-            { name: "preventOverflow", options: { padding: tooltipPadding || { left: 16, right: 16 } } },
+            { name: "offset", options: { offset: tooltipOffset } },
+            { name: "preventOverflow", options: { padding: tooltipPadding } },
         ],
-    }), styles = _e.styles, attributes = _e.attributes;
+    }), styles = _k.styles, attributes = _k.attributes;
     var tooltip = (React__default['default'].createElement(StyledTooltip, __assign({ ref: setTooltipElement, style: styles.popper }, attributes.popper),
-        content,
+        React__default['default'].createElement(styled.ThemeProvider, { theme: invertTheme }, content),
         React__default['default'].createElement(Arrow, { ref: setArrowElement, style: styles.arrow })));
+    var tooltipInPortal = portalRoot ? reactDom.createPortal(tooltip, portalRoot) : null;
     return {
         targetRef: setTargetElement,
-        tooltip: tooltip,
+        tooltip: tooltipInPortal !== null && tooltipInPortal !== void 0 ? tooltipInPortal : tooltip,
         tooltipVisible: visible,
     };
 };
@@ -4026,121 +4181,6 @@ var ResetCSS = styled.createGlobalStyle(templateObject_1 || (templateObject_1 = 
     return theme.colors.input;
 });
 var templateObject_1;
-
-var baseColors = {
-    failure: "#ED4B9E",
-    primary: "#7A7A7A",
-    primaryBright: "#53DEE9",
-    primaryDark: "#0098A1",
-    secondary: "#7645D9",
-    success: "#FDC702",
-    warning: "#FFB237",
-};
-var brandColors = {
-    binance: "#F0B90B",
-};
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#f0f0f0", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#000000", textDisabled: "#BDC2C4", textSubtle: "#303133", borderColor: "#E9EAEB", gradients: {
-        bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
-        cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
-        blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
-        violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
-        violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
-    } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#100C18", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#191326", input: "#483f5a", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#A28BD4", borderColor: "#524B63", gradients: {
-        bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
-        cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
-        blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
-        violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
-        violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
-    } });
-
-var light$7 = {
-    background: lightColors.backgroundAlt,
-};
-var dark$7 = {
-    background: darkColors.backgroundAlt,
-};
-
-var light$6 = {
-    background: lightColors.backgroundAlt,
-    boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
-    boxShadowActive: shadows.active,
-    boxShadowSuccess: shadows.success,
-    boxShadowWarning: shadows.warning,
-    cardHeaderBackground: {
-        default: lightColors.gradients.cardHeader,
-        blue: lightColors.gradients.blue,
-        violet: lightColors.gradients.violet,
-    },
-    dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
-};
-var dark$6 = {
-    background: darkColors.backgroundAlt,
-    boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
-    boxShadowActive: shadows.active,
-    boxShadowSuccess: shadows.success,
-    boxShadowWarning: shadows.warning,
-    cardHeaderBackground: {
-        default: darkColors.gradients.cardHeader,
-        blue: darkColors.gradients.blue,
-        violet: darkColors.gradients.violet,
-    },
-    dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
-};
-
-var light$5 = {
-    handleBackground: lightColors.backgroundAlt,
-    handleShadow: lightColors.textDisabled,
-};
-var dark$5 = {
-    handleBackground: darkColors.backgroundAlt,
-    handleShadow: darkColors.textDisabled,
-};
-
-var light$4 = {
-    handleBackground: lightColors.backgroundAlt,
-};
-var dark$4 = {
-    handleBackground: darkColors.backgroundAlt,
-};
-
-var light$3 = {
-    handleBackground: lightColors.backgroundAlt,
-};
-var dark$3 = {
-    handleBackground: darkColors.backgroundAlt,
-};
-
-var light$2 = {
-    background: lightColors.backgroundAlt,
-    hover: "#EEEAF4",
-};
-var dark$2 = {
-    background: darkColors.backgroundAlt,
-    hover: "#473d5d",
-};
-
-var light$1 = {
-    background: lightColors.backgroundAlt,
-};
-var dark$1 = {
-    background: darkColors.backgroundAlt,
-};
-
-var light = {
-    background: darkColors.backgroundAlt,
-    text: darkColors.text,
-    boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.2), 0px 4px 12px -8px rgba(14, 14, 44, 0.1)",
-};
-var dark = {
-    background: lightColors.backgroundAlt,
-    text: lightColors.text,
-    boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.2), 0px 4px 12px -8px rgba(14, 14, 44, 0.1)",
-};
-
-var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark$7, colors: darkColors, card: dark$6, toggle: dark$3, nav: dark$2, modal: dark$1, pancakeToggle: dark$5, radio: dark$4, tooltip: dark });
-
-var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light$7, colors: lightColors, card: light$6, toggle: light$3, nav: light$2, modal: light$1, pancakeToggle: light$5, radio: light$4, tooltip: light });
 
 exports.AddIcon = Icon$1B;
 exports.Alert = Alert;
