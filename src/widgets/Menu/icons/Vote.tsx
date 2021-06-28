@@ -9,7 +9,7 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
                 <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                     d="M24,8,21.07,0H2.929L0,8Z"
                     transform="translate(0.5 9.286)"
                 />
@@ -21,24 +21,24 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
                 <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     d="M9.25,12.671l3.939-10.1L4.732,0,0,12.671Z"
                     transform="translate(6.823 0.615)"
                 />
                 <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
                     d="M0,.5H15.009"
                     transform="translate(5.004 12.786)"
                 />
                 <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M0,5H24V0H0Z"
                     transform="translate(0.5 17.286)"
                 />

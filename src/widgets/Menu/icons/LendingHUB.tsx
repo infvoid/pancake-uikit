@@ -21,14 +21,14 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
                 <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     d="M2.293,11.242H.475A.475.475,0,0,1,0,10.766V.476A.477.477,0,0,1,.475,0H2.293a.477.477,0,0,1,.476.476v10.29A.476.476,0,0,1,2.293,11.242Z"
                     transform="translate(3.355 8.235)"
                 />
                 <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     d="M2.293,11.242H.475A.475.475,0,0,1,0,10.766V.476A.477.477,0,0,1,.475,0H2.293a.477.477,0,0,1,.476.476v10.29A.476.476,0,0,1,2.293,11.242Z"
                     transform="translate(17.009 8.235)"
                 />
@@ -36,7 +36,7 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
             <rect
                 fill="none"
                 stroke="currentColor"
-                stroke-miterlimit="10"
+                strokeMiterlimit="10"
                 width="22"
                 height="2.75"
                 rx="0.4"

@@ -8,18 +8,18 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
       <path
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-miterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="10"
         d="M18,3.445H0L4.765,0"
         transform="translate(5 6.16)"
       />
       <path
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-miterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeMiterlimit="10"
         d="M18,3.445H0L4.765,0"
         transform="translate(23 22.445) rotate(180)"
       />

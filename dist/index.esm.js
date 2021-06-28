@@ -3264,17 +3264,17 @@ var Icon$d = function (_a) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("g", { transform: "translate(0.5 0.5)" },
             React.createElement("g", null,
-                React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M2.507,5.5H.389A.4.4,0,0,1,0,5.094V.406A.4.4,0,0,1,.389,0H2.507A.4.4,0,0,1,2.9.406V5.094A.4.4,0,0,1,2.507,5.5Z", transform: "translate(3.667 12.833)" }),
-                React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M2.507,13.75H.389A.408.408,0,0,1,0,13.326V.424A.408.408,0,0,1,.389,0H2.507A.408.408,0,0,1,2.9.424v12.9A.408.408,0,0,1,2.507,13.75Z", transform: "translate(9.167 4.583)" }),
-                React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M2.507,10.083H.389A.426.426,0,0,1,0,9.628V.455A.426.426,0,0,1,.389,0H2.507A.426.426,0,0,1,2.9.455V9.628A.426.426,0,0,1,2.507,10.083Z", transform: "translate(14.667 8.25)" }),
-                React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-linecap": "round", d: "M22,13.857v6.851A1.293,1.293,0,0,1,20.708,22H1.292A1.293,1.293,0,0,1,0,20.708V1.292A1.293,1.293,0,0,1,1.292,0H20.708A1.293,1.293,0,0,1,22,1.292V11" })))));
+                React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M2.507,5.5H.389A.4.4,0,0,1,0,5.094V.406A.4.4,0,0,1,.389,0H2.507A.4.4,0,0,1,2.9.406V5.094A.4.4,0,0,1,2.507,5.5Z", transform: "translate(3.667 12.833)" }),
+                React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M2.507,13.75H.389A.408.408,0,0,1,0,13.326V.424A.408.408,0,0,1,.389,0H2.507A.408.408,0,0,1,2.9.424v12.9A.408.408,0,0,1,2.507,13.75Z", transform: "translate(9.167 4.583)" }),
+                React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M2.507,10.083H.389A.426.426,0,0,1,0,9.628V.455A.426.426,0,0,1,.389,0H2.507A.426.426,0,0,1,2.9.455V9.628A.426.426,0,0,1,2.507,10.083Z", transform: "translate(14.667 8.25)" }),
+                React.createElement("path", { fill: "none", stroke: "currentColor", strokeLinecap: "round", d: "M22,13.857v6.851A1.293,1.293,0,0,1,20.708,22H1.292A1.293,1.293,0,0,1,0,20.708V1.292A1.293,1.293,0,0,1,1.292,0H20.708A1.293,1.293,0,0,1,22,1.292V11" })))));
 };
 
 var Icon$c = function (_a) {
     var props = __rest(_a, []);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 30 26" }, props),
-        React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-miterlimit": "10", d: "M18,3.445H0L4.765,0", transform: "translate(5 6.16)" }),
-        React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-miterlimit": "10", d: "M18,3.445H0L4.765,0", transform: "translate(23 22.445) rotate(180)" })));
+        React.createElement("path", { fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: "10", d: "M18,3.445H0L4.765,0", transform: "translate(5 6.16)" }),
+        React.createElement("path", { fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeMiterlimit: "10", d: "M18,3.445H0L4.765,0", transform: "translate(23 22.445) rotate(180)" })));
 };
 
 var Icon$b = function (_a) {
@@ -3294,16 +3294,16 @@ var Icon$a = function (_a) {
         React.createElement("g", { transform: "translate(0.5 0.698)" },
             React.createElement("g", { transform: "translate(-0.5 -1.5)" },
                 React.createElement("g", { id: "Group_5", "data-name": "Group 5", transform: "translate(0 0.591)" },
-                    React.createElement("path", { stroke: "currentColor", "stroke-linecap": "round", "stroke-miterlimit": "10", "stroke-linejoin": "round", fill: "none", d: "M0,10.09c-.006-.08,8.845-5.856,8.845-5.856l4.3,2.444L22.262,0", transform: "translate(0.5 0.91)" }),
-                    React.createElement("path", { stroke: "currentColor", "stroke-linecap": "round", "stroke-miterlimit": "10", "stroke-linejoin": "round", fill: "none", d: "M0,0H4.7V4.538", transform: "translate(18.066 0.909)" })),
+                    React.createElement("path", { stroke: "currentColor", strokeLinecap: "round", strokeMiterlimit: "10", strokeLinejoin: "round", fill: "none", d: "M0,10.09c-.006-.08,8.845-5.856,8.845-5.856l4.3,2.444L22.262,0", transform: "translate(0.5 0.91)" }),
+                    React.createElement("path", { stroke: "currentColor", strokeLinecap: "round", strokeMiterlimit: "10", strokeLinejoin: "round", fill: "none", d: "M0,0H4.7V4.538", transform: "translate(18.066 0.909)" })),
                 React.createElement("g", { transform: "translate(14 13.591)" },
                     React.createElement("path", { fill: "none", d: "M1.929.006a.616.616,0,0,0-.478.531h0c0,.245-.007.491-.011.737h0a.187.187,0,0,1-.14.191h0A1.93,1.93,0,0,0,.014,3.625h0A1.675,1.675,0,0,0,.642,4.834h0a6.877,6.877,0,0,0,.647.433h0c.448.274.9.541,1.35.809h0a.779.779,0,0,1,.409.786h0a.766.766,0,0,1-.655.794h0a2.292,2.292,0,0,1-.63,0h0a.726.726,0,0,1-.652-.686h0a1.8,1.8,0,0,0-.075-.308h0A.5.5,0,0,0,.48,6.282h0a.506.506,0,0,0-.471.527h0A1.86,1.86,0,0,0,1.3,8.694h0a.191.191,0,0,1,.154.212h0c0,.265.015.531.035.8h0a.49.49,0,0,0,.475.47h0a.5.5,0,0,0,.575-.41h0a4.938,4.938,0,0,0,.059-.688h0c.007-.2.036-.373.287-.391h0c.008,0,.016-.008.025-.012h0a1.852,1.852,0,0,0,1.221-1.9h0a1.7,1.7,0,0,0-.872-1.615h0c-.24-.161-.492-.3-.738-.453h0c-.369-.227-.744-.447-1.1-.686h0a.765.765,0,0,1-.288-.9h0A.746.746,0,0,1,1.8,2.49h0a3.389,3.389,0,0,1,.416-.014h0a.733.733,0,0,1,.778.648h0a3.543,3.543,0,0,0,.108.432h0a.5.5,0,0,0,.559.331h0a.524.524,0,0,0,.46-.5h0a1.887,1.887,0,0,0-1.4-1.964h0c-.1-.022-.126-.062-.13-.165h0A5.44,5.44,0,0,0,2.522.4h0A.454.454,0,0,0,2.034,0h0a.979.979,0,0,0-.105.006Z", transform: "translate(0.128 0.827)" }),
-                    React.createElement("g", { "clip-path": "url(#clip-path4)" },
+                    React.createElement("g", { clipPath: "url(#clip-path4)" },
                         React.createElement("path", { fill: "currentColor", id: "Fill_6", "data-name": "Fill 6", d: "M0,20.173H14.133V0H0Z", transform: "translate(-4.872 -4.173)" }))),
                 React.createElement("g", { "data-name": "Group 13", transform: "translate(0 11.591)" },
-                    React.createElement("path", { "data-name": "Stroke 9", stroke: "currentColor", "stroke-linecap": "round", "stroke-miterlimit": "10", "stroke-linejoin": "round", fill: "none", d: "M15.211,7.605A7.606,7.606,0,1,1,7.606,0,7.605,7.605,0,0,1,15.211,7.605Z", transform: "translate(8.551 0.308)" }),
-                    React.createElement("path", { stroke: "currentColor", "stroke-linecap": "round", "stroke-miterlimit": "10", "stroke-linejoin": "round", fill: "none", d: "M8.383,15.172a7.689,7.689,0,0,1-.778.04A7.606,7.606,0,1,1,8.806.095", transform: "translate(0.501 0.307)" }))),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-linecap": "round", "stroke-miterlimit": "10", d: "M3.521,0S0,1.021,0,4.283", transform: "translate(3.5 13.5)" }))));
+                    React.createElement("path", { "data-name": "Stroke 9", stroke: "currentColor", strokeLinecap: "round", strokeMiterlimit: "10", strokeLinejoin: "round", fill: "none", d: "M15.211,7.605A7.606,7.606,0,1,1,7.606,0,7.605,7.605,0,0,1,15.211,7.605Z", transform: "translate(8.551 0.308)" }),
+                    React.createElement("path", { stroke: "currentColor", strokeLinecap: "round", strokeMiterlimit: "10", strokeLinejoin: "round", fill: "none", d: "M8.383,15.172a7.689,7.689,0,0,1-.778.04A7.606,7.606,0,1,1,8.806.095", transform: "translate(0.501 0.307)" }))),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeMiterlimit: "10", d: "M3.521,0S0,1.021,0,4.283", transform: "translate(3.5 13.5)" }))));
 };
 
 var Icon$9 = function (_a) {
@@ -3311,23 +3311,23 @@ var Icon$9 = function (_a) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 28 28" }, props),
         React.createElement("g", { transform: "translate(9 9)" },
             React.createElement("path", { fill: "#fff", d: "M3.454,3.293,0,3.82,2.5,6.382,1.909,10,5,8.292,8.091,10,7.5,6.382,10,3.82,6.545,3.293,5,0Z" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M5,0,6.545,3.293,10,3.82,7.5,6.382,8.091,10,5,8.291,1.909,10,2.5,6.382,0,3.82l3.454-.528Z" })),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M5,0,6.545,3.293,10,3.82,7.5,6.382,8.091,10,5,8.291,1.909,10,2.5,6.382,0,3.82l3.454-.528Z" })),
         React.createElement("g", { transform: "translate(2 2)" },
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M0,11C0,4.925,5.373,0,12,0", transform: "translate(0.455 0.648)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M12,0C12,6.075,6.627,11,0,11", transform: "translate(11.455 12.648)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", "stroke-dasharray": "3 3", d: "M0,0C6.627,0,12,4.925,12,11", transform: "translate(11.455 0.648)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", "stroke-dasharray": "3 3", d: "M12,11C5.373,11,0,6.075,0,0", transform: "translate(0.455 12.648)" }))));
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M0,11C0,4.925,5.373,0,12,0", transform: "translate(0.455 0.648)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M12,0C12,6.075,6.627,11,0,11", transform: "translate(11.455 12.648)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", strokeDasharray: "3 3", d: "M0,0C6.627,0,12,4.925,12,11", transform: "translate(11.455 0.648)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", strokeDasharray: "3 3", d: "M12,11C5.373,11,0,6.075,0,0", transform: "translate(0.455 12.648)" }))));
 };
 
 var Icon$8 = function (_a) {
     var props = __rest(_a, []);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 28 28" }, props),
         React.createElement("g", { transform: "translate(2 2)" },
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-linejoin": "round", d: "M24,8,21.07,0H2.929L0,8Z", transform: "translate(0.5 9.286)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeLinejoin: "round", d: "M24,8,21.07,0H2.929L0,8Z", transform: "translate(0.5 9.286)" }),
             React.createElement("path", { fill: "#fff", d: "M0,12.671H9.249l3.94-10.1L4.732,0Z", transform: "translate(6.824 0.615)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M9.25,12.671l3.939-10.1L4.732,0,0,12.671Z", transform: "translate(6.823 0.615)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", "stroke-linecap": "round", d: "M0,.5H15.009", transform: "translate(5.004 12.786)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", "stroke-linecap": "round", "stroke-linejoin": "round", d: "M0,5H24V0H0Z", transform: "translate(0.5 17.286)" }))));
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M9.25,12.671l3.939-10.1L4.732,0,0,12.671Z", transform: "translate(6.823 0.615)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", strokeLinecap: "round", d: "M0,.5H15.009", transform: "translate(5.004 12.786)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", strokeLinecap: "round", strokeLinejoin: "round", d: "M0,5H24V0H0Z", transform: "translate(0.5 17.286)" }))));
 };
 
 var Icon$7 = function (_a) {
@@ -3337,9 +3337,9 @@ var Icon$7 = function (_a) {
             React.createElement("g", { id: "Group_3", "data-name": "Group 3", transform: "translate(0 0.538)" },
                 React.createElement("path", { fill: "currentColor", d: "M16.986,6H10.9c-2.034,0-4.226,0-6.469,0-.9,0-1.807-.018-2.688-.033L.786,5.945a2.237,2.237,0,0,1-.234-.021C.488,5.916.422,5.908.357,5.9.179,5.9.074,5.789.025,5.561a.37.37,0,0,0-.017-.049L0,5.491V5.21a.584.584,0,0,1,.3-.328L.371,4.84A4,4,0,0,1,.75,4.651C2.07,4.1,3.412,3.535,4.71,2.993l.017-.007c1.416-.589,2.894-1.2,4.2-1.741l1.23-.509Q10.682.517,11.21.3l.007,0,.731-.3h.078l.307.128.486.2,2.654,1.1.038.016,2.616,1.08.38.157c.885.366,1.8.745,2.7,1.128.484.205.974.42,1.448.628l.012.005q.486.213.972.424A.541.541,0,0,1,24,5.241v.281a.458.458,0,0,1-.5.4c-.432.008-.871.018-1.3.028H22.2c-.692.016-1.407.033-2.11.038C18.98,6,17.9,6,16.986,6ZM12.015,1.289a.339.339,0,0,0-.123.022c-.856.334-1.606.634-2.294.917-1.549.636-3.065,1.264-4.745,1.96-.266.11-.533.227-.792.34l-.01,0-.343.149,0,.03,0,.022H20.4l-.03-.014-.03-.014L19.02,4.158l-.009,0-1.452-.6c-1.7-.705-3.526-1.463-5.4-2.232A.389.389,0,0,0,12.015,1.289Z", transform: "translate(0 0.462)" })),
             React.createElement("path", { fill: "currentColor", d: "M4.126,6.767a1.851,1.851,0,0,1-1.22,1.9c-.008,0-.017.013-.025.013-.251.018-.28.187-.287.39a4.9,4.9,0,0,1-.059.689.5.5,0,0,1-.575.409.491.491,0,0,1-.475-.47c-.02-.264-.031-.53-.034-.795A.192.192,0,0,0,1.3,8.694,1.86,1.86,0,0,1,.008,6.81.507.507,0,0,1,.48,6.282a.5.5,0,0,1,.557.378,1.939,1.939,0,0,1,.075.307.724.724,0,0,0,.651.686,2.289,2.289,0,0,0,.63,0,.766.766,0,0,0,.654-.795.777.777,0,0,0-.408-.786c-.45-.269-.9-.535-1.35-.81a6.54,6.54,0,0,1-.648-.433A1.673,1.673,0,0,1,.014,3.626,1.932,1.932,0,0,1,1.3,1.465a.186.186,0,0,0,.14-.19c0-.246.009-.492.011-.738A.615.615,0,0,1,1.929.006.475.475,0,0,1,2.522.4a5.413,5.413,0,0,1,.07.858c0,.1.034.144.13.165a1.888,1.888,0,0,1,1.4,1.965.523.523,0,0,1-.46.5A.5.5,0,0,1,3.1,3.556a3.589,3.589,0,0,1-.108-.431.734.734,0,0,0-.777-.649A3.692,3.692,0,0,0,1.8,2.49a.747.747,0,0,0-.673.624.764.764,0,0,0,.289.9c.36.239.735.459,1.1.686.246.151.5.293.738.453a1.7,1.7,0,0,1,.871,1.614", transform: "translate(9.442 8.236)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M2.293,11.242H.475A.475.475,0,0,1,0,10.766V.476A.477.477,0,0,1,.475,0H2.293a.477.477,0,0,1,.476.476v10.29A.476.476,0,0,1,2.293,11.242Z", transform: "translate(3.355 8.235)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M2.293,11.242H.475A.475.475,0,0,1,0,10.766V.476A.477.477,0,0,1,.475,0H2.293a.477.477,0,0,1,.476.476v10.29A.476.476,0,0,1,2.293,11.242Z", transform: "translate(17.009 8.235)" })),
-        React.createElement("rect", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", width: "22", height: "2.75", rx: "0.4", transform: "translate(3 22)" })));
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M2.293,11.242H.475A.475.475,0,0,1,0,10.766V.476A.477.477,0,0,1,.475,0H2.293a.477.477,0,0,1,.476.476v10.29A.476.476,0,0,1,2.293,11.242Z", transform: "translate(3.355 8.235)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M2.293,11.242H.475A.475.475,0,0,1,0,10.766V.476A.477.477,0,0,1,.475,0H2.293a.477.477,0,0,1,.476.476v10.29A.476.476,0,0,1,2.293,11.242Z", transform: "translate(17.009 8.235)" })),
+        React.createElement("rect", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", width: "22", height: "2.75", rx: "0.4", transform: "translate(3 22)" })));
 };
 
 var Icon$6 = function (_a) {
@@ -3349,16 +3349,16 @@ var Icon$6 = function (_a) {
             React.createElement("clipPath", { id: "clip-path8" },
                 React.createElement("path", { fill: "none", d: "M0,22.805H23.93V0H0Z", transform: "translate(0 0)" }))),
         React.createElement("g", { transform: "translate(2 3)" },
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M17.488,0s-2.94,4.883-5.019,6.81-2.72.438-5.645-.418S0,11.178,0,11.178", transform: "translate(1.419 0.632)" }),
-            React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M0,.984,3.757,0l.755,3.52", transform: "translate(15.196 0.617)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M17.488,0s-2.94,4.883-5.019,6.81-2.72.438-5.645-.418S0,11.178,0,11.178", transform: "translate(1.419 0.632)" }),
+            React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M0,.984,3.757,0l.755,3.52", transform: "translate(15.196 0.617)" }),
             React.createElement("path", { fill: "none", d: "M0,22.805H23.93V0H0Z", transform: "translate(0 0)" }),
-            React.createElement("g", { "clip-path": "url(#clip-path8)" },
-                React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M0,5.07H3.355V0H0Z", transform: "translate(3.652 17.235)" }),
-                React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M0,8.16H3.355V0H0Z", transform: "translate(10.849 14.145)" }),
-                React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M0,14.163H3.355V0H0Z", transform: "translate(17.828 8.142)" }),
+            React.createElement("g", { clipPath: "url(#clip-path8)" },
+                React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M0,5.07H3.355V0H0Z", transform: "translate(3.652 17.235)" }),
+                React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M0,8.16H3.355V0H0Z", transform: "translate(10.849 14.145)" }),
+                React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M0,14.163H3.355V0H0Z", transform: "translate(17.828 8.142)" }),
                 React.createElement("g", { transform: "translate(0 21.805)" },
                     React.createElement("path", { fill: "#fff", d: "M0,.5H23.93", transform: "translate(0 0)" }),
-                    React.createElement("path", { fill: "none", stroke: "currentColor", "stroke-miterlimit": "10", d: "M0,.5H23.93", transform: "translate(0 0)" }))))));
+                    React.createElement("path", { fill: "none", stroke: "currentColor", strokeMiterlimit: "10", d: "M0,.5H23.93", transform: "translate(0 0)" }))))));
 };
 
 var IconModule = /*#__PURE__*/Object.freeze({

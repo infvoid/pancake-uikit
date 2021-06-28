@@ -18,14 +18,14 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
                 <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     d="M17.488,0s-2.94,4.883-5.019,6.81-2.72.438-5.645-.418S0,11.178,0,11.178"
                     transform="translate(1.419 0.632)"
                 />
                 <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     d="M0,.984,3.757,0l.755,3.52"
                     transform="translate(15.196 0.617)"
                 />
@@ -38,21 +38,21 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
                     <path
                         fill="none"
                         stroke="currentColor"
-                        stroke-miterlimit="10"
+                        strokeMiterlimit="10"
                         d="M0,5.07H3.355V0H0Z"
                         transform="translate(3.652 17.235)"
                     />
                     <path
                         fill="none"
                         stroke="currentColor"
-                        stroke-miterlimit="10"
+                        strokeMiterlimit="10"
                         d="M0,8.16H3.355V0H0Z"
                         transform="translate(10.849 14.145)"
                     />
                     <path
                         fill="none"
                         stroke="currentColor"
-                        stroke-miterlimit="10"
+                        strokeMiterlimit="10"
                         d="M0,14.163H3.355V0H0Z"
                         transform="translate(17.828 8.142)"
                     />
@@ -61,7 +61,7 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
                         <path
                             fill="none"
                             stroke="currentColor"
-                            stroke-miterlimit="10"
+                            strokeMiterlimit="10"
                             d="M0,.5H23.93"
                             transform="translate(0 0)"
                         />
