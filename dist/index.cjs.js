@@ -1187,7 +1187,7 @@ var ButtonMenuItem = function (_a) {
     if (!isActive) {
         return React__default['default'].createElement(InactiveButton, __assign({ forwardedAs: as, variant: "tertiary" }, props));
     }
-    return React__default['default'].createElement(Button, __assign({ as: as, variant: variant }, props));
+    return React__default['default'].createElement(Button, __assign({ className: "button-checked", as: as, variant: variant }, props));
 };
 var templateObject_1$M;
 
@@ -2736,14 +2736,16 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#f0f0f0", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#000000", textDisabled: "#BDC2C4", textSubtle: "#303133", borderColor: "#E9EAEB", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#f6f6f6", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#EBEBEB", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#000000", textDisabled: "#BDC2C4", 
+    // textSubtle: "#303133",
+    textSubtle: "#000000", borderColor: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
         blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
         violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#100C18", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#191326", input: "#483f5a", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#A28BD4", borderColor: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#0f0f3f", backgroundDisabled: "#3c3742", backgroundAlt: "#010033", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#010033", input: "#38385b", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#ffffff", borderColor: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
         blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
