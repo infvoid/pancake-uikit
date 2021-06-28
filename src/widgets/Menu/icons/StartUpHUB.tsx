@@ -49,7 +49,7 @@ const Icon: React.FC<SvgProps> = ({ ...props }) => {
                             transform="translate(0.128 0.827)"
                         />
                         <g
-                            clip-path="url(#clip-path4)"
+                            clipPath="url(#clip-path4)"
                         >
                             <path
                                 fill="currentColor"
