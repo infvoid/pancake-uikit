@@ -44,4 +44,4 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
   </Modal>
 );
 
-export default AccountModal;
+export default React.memo(AccountModal, (prevProps, nextProps) => prevProps.account === nextProps.account);

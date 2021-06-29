@@ -11,12 +11,14 @@ const MyButton = styled(Button)`
 
 interface Props {
   account?: string;
+  connectTitle?: string;
+  learnConnect?: string;
   login: Login;
   logout: () => void;
 }
 
-const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
-  const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(login, logout, account);
+const UserBlock: React.FC<Props> = ({ account, connectTitle, learnConnect, login, logout }) => {
+  const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(login, logout, connectTitle, learnConnect, account);
   const accountEllipsis = account ? `${account.substring(0, 4)}...${account.substring(account.length - 4)}` : null;
   return (
     <div>
@@ -44,4 +46,5 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
   );
 };
 
-export default React.memo(UserBlock, (prevProps, nextProps) => prevProps.account === nextProps.account);
+export default UserBlock
+// export default React.memo(UserBlock, (prevProps, nextProps) => prevProps.account === nextProps.account);

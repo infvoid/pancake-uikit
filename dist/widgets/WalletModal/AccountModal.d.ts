@@ -4,5 +4,5 @@ interface Props {
     logout: () => void;
     onDismiss?: () => void;
 }
-declare const AccountModal: React.FC<Props>;
-export default AccountModal;
+declare const _default: React.NamedExoticComponent<Props>;
+export default _default;

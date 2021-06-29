@@ -73,6 +73,8 @@ const Menu: React.FC<NavProps> = ({
   cakePriceUsd,
   links,
   profile,
+  connectTitle,
+  learnConnect,
   children,
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -123,7 +125,7 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
-          <UserBlock account={account} login={login} logout={logout} />
+          <UserBlock account={account} login={login} logout={logout} connectTitle={connectTitle} learnConnect={learnConnect} />
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>

@@ -49,6 +49,8 @@ export interface PanelProps {
 }
 export interface NavProps extends PanelProps {
     account?: string;
+    connectTitle?: string;
+    learnConnect?: string;
     login: Login;
     profile?: Profile;
     logout: () => void;

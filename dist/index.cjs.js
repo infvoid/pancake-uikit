@@ -3905,13 +3905,14 @@ var WalletCard = function (_a) {
 
 var HelpLink = styled__default['default'](Link)(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
 var ConnectModal = function (_a) {
-    var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
-    return (React__default['default'].createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
+    var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b, connectTitle = _a.connectTitle, learnConnect = _a.learnConnect;
+    return (React__default['default'].createElement(Modal, { title: connectTitle, onDismiss: onDismiss },
         connectors.map(function (entry, index) { return (React__default['default'].createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
-        React__default['default'].createElement(HelpLink, { href: "https://docs.hubdao.io/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain", external: true },
+        React__default['default'].createElement(HelpLink, { href: "https://docs.hubdao.io/", external: true },
             React__default['default'].createElement(Icon$1c, { color: "primary", mr: "6px" }),
-            "Learn how to connect")));
+            learnConnect)));
 };
+var ConnectModal$1 = React__default['default'].memo(ConnectModal, function (prevProps, nextProps) { return prevProps.connectTitle === nextProps.connectTitle && prevProps.learnConnect === nextProps.learnConnect; });
 var templateObject_1$7;
 
 var StyleButton = styled__default['default'](Text).attrs({ role: "button" })(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
@@ -3960,17 +3961,18 @@ var AccountModal = function (_a) {
                     onDismiss();
                 } }, "Logout"))));
 };
+var AccountModal$1 = React__default['default'].memo(AccountModal, function (prevProps, nextProps) { return prevProps.account === nextProps.account; });
 
-var useWalletModal = function (login, logout, account) {
-    var onPresentConnectModal = useModal(React__default['default'].createElement(ConnectModal, { login: login }))[0];
-    var onPresentAccountModal = useModal(React__default['default'].createElement(AccountModal, { account: account || "", logout: logout }))[0];
+var useWalletModal = function (login, logout, connectTitle, learnConnect, account) {
+    var onPresentConnectModal = useModal(React__default['default'].createElement(ConnectModal$1, { login: login, connectTitle: connectTitle || "", learnConnect: learnConnect || "" }))[0];
+    var onPresentAccountModal = useModal(React__default['default'].createElement(AccountModal$1, { account: account || "", logout: logout }))[0];
     return { onPresentConnectModal: onPresentConnectModal, onPresentAccountModal: onPresentAccountModal };
 };
 
 var MyButton = styled__default['default'](Button)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  background-color: #2f303f !important;\n  color: #ffffff !important;\n"], ["\n  background-color: #2f303f !important;\n  color: #ffffff !important;\n"])));
 var UserBlock = function (_a) {
-    var account = _a.account, login = _a.login, logout = _a.logout;
-    var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
+    var account = _a.account, connectTitle = _a.connectTitle, learnConnect = _a.learnConnect, login = _a.login, logout = _a.logout;
+    var _b = useWalletModal(login, logout, connectTitle, learnConnect, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
     return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(MyButton, { scale: "sm", variant: "tertiary", onClick: function () {
             onPresentAccountModal();
@@ -3978,8 +3980,8 @@ var UserBlock = function (_a) {
             onPresentConnectModal();
         } }, "Connect"))));
 };
-var UserBlock$1 = React__default['default'].memo(UserBlock, function (prevProps, nextProps) { return prevProps.account === nextProps.account; });
 var templateObject_1$5;
+// export default React.memo(UserBlock, (prevProps, nextProps) => prevProps.account === nextProps.account);
 
 var StyledAvatar = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
 var Pip = styled__default['default'].div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
@@ -4032,7 +4034,7 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5 || 
 });
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, profile = _a.profile, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, profile = _a.profile, connectTitle = _a.connectTitle, learnConnect = _a.learnConnect, children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = React.useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -4072,7 +4074,7 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React__default['default'].createElement(Flex, null,
-                React__default['default'].createElement(UserBlock$1, { account: account, login: login, logout: logout }),
+                React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout, connectTitle: connectTitle, learnConnect: learnConnect }),
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links }),

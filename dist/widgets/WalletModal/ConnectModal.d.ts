@@ -3,6 +3,8 @@ import { Login } from "./types";
 interface Props {
     login: Login;
     onDismiss?: () => void;
+    connectTitle: string;
+    learnConnect: string;
 }
-declare const ConnectModal: React.FC<Props>;
-export default ConnectModal;
+declare const _default: React.NamedExoticComponent<Props>;
+export default _default;

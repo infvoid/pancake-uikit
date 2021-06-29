@@ -10,6 +10,8 @@ import { Login } from "./types";
 interface Props {
   login: Login;
   onDismiss?: () => void;
+  connectTitle: string
+  learnConnect: string
 }
 
 const HelpLink = styled(Link)`
@@ -19,8 +21,8 @@ const HelpLink = styled(Link)`
   margin-top: 24px;
 `;
 
-const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => (
-  <Modal title="Connect to a wallet" onDismiss={onDismiss}>
+const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, connectTitle, learnConnect }) => (
+  <Modal title={connectTitle} onDismiss={onDismiss}>
     {config.map((entry, index) => (
       <WalletCard
         key={entry.title}
@@ -31,13 +33,13 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => (
       />
     ))}
     <HelpLink
-      href="https://docs.hubdao.io/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain"
+      href="https://docs.hubdao.io/"
       external
     >
       <HelpIcon color="primary" mr="6px" />
-      Learn how to connect
+      {learnConnect}
     </HelpLink>
   </Modal>
 );
 
-export default ConnectModal;
+export default React.memo(ConnectModal, (prevProps, nextProps) => prevProps.connectTitle === nextProps.connectTitle && prevProps.learnConnect === nextProps.learnConnect);
