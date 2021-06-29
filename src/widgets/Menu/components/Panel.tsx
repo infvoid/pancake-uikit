@@ -10,9 +10,12 @@ interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
 }
 
-const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean, isClass: string }>`
+const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   position: fixed;
   padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 60px;
+  }
   top: 0;
   left: 0;
   display: flex;
@@ -21,7 +24,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean, isClass: 
   flex-shrink: 0;
   background-color: ${({ theme }) => theme.nav.background};
   width: ${({ isPushed }) => (isPushed ? `${SIDEBAR_WIDTH_FULL}px` : 0)};
-  height: ${({ isClass }) => (isClass === "" ? "100vh" : "calc(100vh - 75px)")};
+  height: 100vh;
   transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   border-right: ${({ isPushed }) => (isPushed ? "2px solid rgba(133, 133, 133, 0.1)" : 0)};
   z-index: 11;
@@ -38,21 +41,8 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean, isClass: 
 const Panel: React.FC<Props> = (props) => {
   const { isPushed, showMenu } = props;
 
-  function isAndroidOrIOS() {
-    var u = navigator.userAgent;
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-    if (isAndroid) {
-      return "android"
-    }
-    if (isiOS) {
-      return "ios"
-    }
-    return ""
-  }
-  let isClass = isAndroidOrIOS()
   return (
-    <StyledPanel isClass={isClass} isPushed={isPushed} showMenu={showMenu}>
+    <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
       <PanelFooter {...props} />
     </StyledPanel>

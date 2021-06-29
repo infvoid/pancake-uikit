@@ -12,8 +12,6 @@ import LangSelector from "./LangSelector";
 interface Props extends PanelProps, PushedProps { }
 
 const Container = styled.div`
-  position: fixed;
-  bottom: 0;
   flex: none;
   padding: 8px 4px;
   background-color: ${({ theme }) => theme.nav.background};
