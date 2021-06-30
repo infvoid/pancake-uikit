@@ -39,12 +39,13 @@ export const ModalBackButton: React.FC<{ onBack: ModalProps["onBack"] }> = ({ on
   );
 };
 
-export const ModalContainer = styled(Box)<{ minWidth: string }>`
+export const ModalContainer = styled(Box) <{ minWidth: string }>`
   overflow: hidden;
   background: ${({ theme }) => theme.modal.background};
   box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid ${({ theme }) => theme.colors.borderColor};
-  border-radius: 32px;
+  /* border-radius: 32px; */
+  border-radius: 9px;
   width: 100%;
   z-index: ${({ theme }) => theme.zIndices.modal};
 
