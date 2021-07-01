@@ -5,6 +5,7 @@ import { Colors } from "../../theme/types";
 export interface CardRibbonProps {
   variantColor?: keyof Colors;
   text: string;
+  style?:any
   ribbonPosition?: "right" | "left";
 }
 
