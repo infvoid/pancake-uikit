@@ -1109,9 +1109,14 @@ var StyledInput$1 = styled(Input$1)(templateObject_2$m || (templateObject_2$m = 
 var templateObject_1$P, templateObject_2$m;
 
 var BalanceInput = function (_a) {
-    var value = _a.value, _b = _a.placeholder, placeholder = _b === void 0 ? "0.0" : _b, onChange = _a.onChange, currencyValue = _a.currencyValue, inputProps = _a.inputProps, _c = _a.isWarning, isWarning = _c === void 0 ? false : _c, props = __rest(_a, ["value", "placeholder", "onChange", "currencyValue", "inputProps", "isWarning"]);
+    var value = _a.value, _b = _a.placeholder, placeholder = _b === void 0 ? "0.0" : _b, onUserInput = _a.onUserInput, currencyValue = _a.currencyValue, inputProps = _a.inputProps, _c = _a.isWarning, isWarning = _c === void 0 ? false : _c, _d = _a.decimals, decimals = _d === void 0 ? 18 : _d, props = __rest(_a, ["value", "placeholder", "onUserInput", "currencyValue", "inputProps", "isWarning", "decimals"]);
+    var handleOnChange = function (e) {
+        if (e.currentTarget.validity.valid) {
+            onUserInput(e.currentTarget.value.replace(/,/g, "."));
+        }
+    };
     return (React.createElement(StyledBalanceInput, __assign({ isWarning: isWarning }, props),
-        React.createElement(StyledInput$1, __assign({ type: "number", value: value, onChange: onChange, placeholder: placeholder }, inputProps)),
+        React.createElement(StyledInput$1, __assign({ pattern: "^[0-9]*[.,]?[0-9]{0," + decimals + "}$", inputMode: "decimal", min: "0", value: value, onChange: handleOnChange, placeholder: placeholder }, inputProps)),
         currencyValue && (React.createElement(Text, { fontSize: "12px", textAlign: "right", color: "textSubtle" }, currencyValue))));
 };
 
