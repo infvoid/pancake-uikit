@@ -56,7 +56,7 @@ export type Colors = {
   textDisabled: string;
   textSubtle: string;
   borderColor: string;
-
+  cardBorder:string;
   // Gradients
   gradients: Gradients;
 

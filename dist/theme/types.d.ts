@@ -50,6 +50,7 @@ export declare type Colors = {
     textDisabled: string;
     textSubtle: string;
     borderColor: string;
+    cardBorder: string;
     gradients: Gradients;
     binance: string;
 };
