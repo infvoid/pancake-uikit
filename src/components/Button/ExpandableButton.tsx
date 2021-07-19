@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import { ChevronDownIcon, ChevronUpIcon } from "../Svg";
 import Button from "./Button";
 import IconButton from "./IconButton";
@@ -8,12 +9,16 @@ interface Props {
   expanded?: boolean;
 }
 
+const IconButtonStyle = styled(IconButton)`
+  background-color: #fff;
+`
+
 export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children }) => {
   return (
-    <IconButton aria-label="Hide or show expandable content" onClick={onClick}>
+    <IconButtonStyle aria-label="Hide or show expandable content" onClick={onClick}>
       {children}
       {expanded ? <ChevronUpIcon color="invertedContrast" /> : <ChevronDownIcon color="invertedContrast" />}
-    </IconButton>
+    </IconButtonStyle>
   );
 };
 ExpandableButton.defaultProps = {
