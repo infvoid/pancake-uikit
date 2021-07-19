@@ -76,7 +76,7 @@ var getThemeValue = function (path, fallback) { return function (theme) {
     return get__default['default'](theme, path, fallback);
 }; };
 
-var rotate$1 = styled.keyframes(templateObject_1$_ || (templateObject_1$_ = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
+var rotate$1 = styled.keyframes(templateObject_1$$ || (templateObject_1$$ = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var spinStyle = styled.css(templateObject_2$o || (templateObject_2$o = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate$1);
 var Svg = styled__default['default'].svg(templateObject_3$b || (templateObject_3$b = __makeTemplateObject(["\n  align-self: center; // Safari fix\n  fill: ", ";\n  flex-shrink: 0;\n  ", "\n  ", "\n"], ["\n  align-self: center; // Safari fix\n  fill: ", ";\n  flex-shrink: 0;\n  ", "\n  ", "\n"])), function (_a) {
     var theme = _a.theme, color = _a.color;
@@ -91,7 +91,7 @@ Svg.defaultProps = {
     xmlns: "http://www.w3.org/2000/svg",
     spin: false,
 };
-var templateObject_1$_, templateObject_2$o, templateObject_3$b;
+var templateObject_1$$, templateObject_2$o, templateObject_3$b;
 
 var Icon$1H = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
@@ -121,7 +121,7 @@ var getFontSize = function (_a) {
     var fontSize = _a.fontSize, small = _a.small;
     return small ? "14px" : fontSize || "16px";
 };
-var Text = styled__default['default'].div(templateObject_1$Z || (templateObject_1$Z = __makeTemplateObject(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n  ", "\n"], ["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n  ", "\n"])), getColor, getFontSize, function (_a) {
+var Text = styled__default['default'].div(templateObject_1$_ || (templateObject_1$_ = __makeTemplateObject(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n  ", "\n"], ["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n  ", "\n"])), getColor, getFontSize, function (_a) {
     var bold = _a.bold;
     return (bold ? 600 : 400);
 }, function (_a) {
@@ -132,13 +132,13 @@ Text.defaultProps = {
     color: "text",
     small: false,
 };
-var templateObject_1$Z;
+var templateObject_1$_;
 
-var TooltipText = styled__default['default'](Text)(templateObject_1$Y || (templateObject_1$Y = __makeTemplateObject(["\n  text-decoration: ", ";\n  text-underline-offset: 0.1em;\n"], ["\n  text-decoration: ", ";\n  text-underline-offset: 0.1em;\n"])), function (_a) {
+var TooltipText = styled__default['default'](Text)(templateObject_1$Z || (templateObject_1$Z = __makeTemplateObject(["\n  text-decoration: ", ";\n  text-underline-offset: 0.1em;\n"], ["\n  text-decoration: ", ";\n  text-underline-offset: 0.1em;\n"])), function (_a) {
     var theme = _a.theme;
     return "underline dotted " + theme.colors.textSubtle;
 });
-var templateObject_1$Y;
+var templateObject_1$Z;
 
 var getExternalLinkProps = function () { return ({
     target: "_blank",
@@ -231,7 +231,7 @@ var getOpacity = function (_a) {
     var _b = _a.$isLoading, $isLoading = _b === void 0 ? false : _b;
     return $isLoading ? ".5" : "1";
 };
-var StyledButton = styled__default['default'].button(templateObject_1$X || (templateObject_1$X = __makeTemplateObject(["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s, opacity 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s, opacity 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n    box-shadow: none;\n  }\n\n  ", "\n  ",
+var StyledButton = styled__default['default'].button(templateObject_1$Y || (templateObject_1$Y = __makeTemplateObject(["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s, opacity 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s, opacity 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n    box-shadow: none;\n  }\n\n  ", "\n  ",
     "\n  ",
     "\n  ", "\n  ", "\n"])), getOpacity, getDisabledStyles, styledSystem.variant({
     prop: "scale",
@@ -239,9 +239,9 @@ var StyledButton = styled__default['default'].button(templateObject_1$X || (temp
 }), styledSystem.variant({
     variants: styleVariants$2,
 }), styledSystem.layout, styledSystem.space);
-var templateObject_1$X;
+var templateObject_1$Y;
 
-var Button = function (props) {
+var Button$1 = function (props) {
     var startIcon = props.startIcon, endIcon = props.endIcon, external = props.external, className = props.className, isLoading = props.isLoading, disabled = props.disabled, children = props.children, rest = __rest(props, ["startIcon", "endIcon", "external", "className", "isLoading", "disabled", "children"]);
     var internalProps = external ? getExternalLinkProps() : {};
     var isDisabled = isLoading || disabled;
@@ -264,7 +264,7 @@ var Button = function (props) {
                     ml: "0.5rem",
                 }))));
 };
-Button.defaultProps = {
+Button$1.defaultProps = {
     isLoading: false,
     external: false,
     variant: variants$3.PRIMARY,
@@ -272,7 +272,40 @@ Button.defaultProps = {
     disabled: false,
 };
 
-var IconButton = styled__default['default'](Button)(templateObject_1$W || (templateObject_1$W = __makeTemplateObject(["\n  padding: 0;\n  width: ", ";\n"], ["\n  padding: 0;\n  width: ", ";\n"])), function (_a) {
+var ButtonStyle = styled__default['default'](StyledButton)(templateObject_1$X || (templateObject_1$X = __makeTemplateObject(["\n  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);\n  background-image: linear-gradient(to left, #ffe505, #ffc81c 0%);\n  color: #010033;\n"], ["\n  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);\n  background-image: linear-gradient(to left, #ffe505, #ffc81c 0%);\n  color: #010033;\n"])));
+var Button = function (props) {
+    var startIcon = props.startIcon, endIcon = props.endIcon, external = props.external, className = props.className, isLoading = props.isLoading, disabled = props.disabled, children = props.children, rest = __rest(props, ["startIcon", "endIcon", "external", "className", "isLoading", "disabled", "children"]);
+    var internalProps = external ? getExternalLinkProps() : {};
+    var isDisabled = isLoading || disabled;
+    var classNames = className ? [className] : [];
+    if (isLoading) {
+        classNames.push("pancake-button--loading");
+    }
+    if (isDisabled && !isLoading) {
+        classNames.push("pancake-button--disabled");
+    }
+    return (React__default['default'].createElement(ButtonStyle, __assign({ "$isLoading": isLoading, className: classNames.join(" "), disabled: isDisabled }, internalProps, rest),
+        React__default['default'].createElement(React__default['default'].Fragment, null,
+            React.isValidElement(startIcon) &&
+                React.cloneElement(startIcon, {
+                    mr: "0.5rem",
+                }),
+            children,
+            React.isValidElement(endIcon) &&
+                React.cloneElement(endIcon, {
+                    ml: "0.5rem",
+                }))));
+};
+Button.defaultProps = {
+    isLoading: false,
+    external: false,
+    variant: variants$3.PRIMARY,
+    scale: scales$7.MD,
+    disabled: false,
+};
+var templateObject_1$X;
+
+var IconButton = styled__default['default'](Button$1)(templateObject_1$W || (templateObject_1$W = __makeTemplateObject(["\n  padding: 0;\n  width: ", ";\n"], ["\n  padding: 0;\n  width: ", ";\n"])), function (_a) {
     var scale = _a.scale;
     return (scale === "sm" ? "32px" : "48px");
 });
@@ -983,7 +1016,7 @@ ExpandableButton.defaultProps = {
 };
 var ExpandableLabel = function (_a) {
     var onClick = _a.onClick, expanded = _a.expanded, children = _a.children;
-    return (React__default['default'].createElement(Button, { variant: "text", "aria-label": "Hide or show expandable content", onClick: onClick, endIcon: expanded ? React__default['default'].createElement(Icon$1k, { color: "primary" }) : React__default['default'].createElement(Icon$1n, { color: "primary" }) }, children));
+    return (React__default['default'].createElement(Button$1, { variant: "text", "aria-label": "Hide or show expandable content", onClick: onClick, endIcon: expanded ? React__default['default'].createElement(Icon$1k, { color: "primary" }) : React__default['default'].createElement(Icon$1n, { color: "primary" }) }, children));
 };
 ExpandableLabel.defaultProps = {
     expanded: false,
@@ -1198,7 +1231,7 @@ var ButtonMenu$1 = function (_a) {
     })));
 };
 
-var InactiveButton = styled__default['default'](Button)(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
+var InactiveButton = styled__default['default'](Button$1)(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
     var theme = _a.theme, variant = _a.variant;
     return (variant === variants$3.PRIMARY ? theme.colors.primary : theme.colors.textSubtle);
 });
@@ -1207,7 +1240,7 @@ var ButtonMenuItem = function (_a) {
     if (!isActive) {
         return React__default['default'].createElement(InactiveButton, __assign({ forwardedAs: as, variant: "tertiary" }, props));
     }
-    return React__default['default'].createElement(Button, __assign({ className: "button-checked", as: as, variant: variant }, props));
+    return React__default['default'].createElement(Button$1, __assign({ className: "button-checked", as: as, variant: variant }, props));
 };
 var templateObject_1$M;
 
@@ -3421,7 +3454,7 @@ var IconModule = /*#__PURE__*/Object.freeze({
     Analytics: Icon$6
 });
 
-var MenuButton = styled__default['default'](Button)(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
+var MenuButton = styled__default['default'](Button$1)(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.text;
 });
@@ -3723,7 +3756,7 @@ var Icons$1 = IconModule;
 var MoonIcon = Icons$1.MoonIcon, SunIcon = Icons$1.SunIcon;
 var ThemeSwitcher = function (_a) {
     var isDark = _a.isDark, toggleTheme = _a.toggleTheme;
-    return (React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
+    return (React__default['default'].createElement(Button$1, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
         React__default['default'].createElement(Flex, { alignItems: "center" },
             React__default['default'].createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
             React__default['default'].createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
@@ -3735,7 +3768,7 @@ var Icons = IconModule;
 var LanguageIcon = Icons.LanguageIcon;
 var LangSelector = function (_a) {
     var currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
-    return (React__default['default'].createElement(Dropdown, { position: "top-right", target: React__default['default'].createElement(Button, { variant: "text", startIcon: React__default['default'].createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
+    return (React__default['default'].createElement(Dropdown, { position: "top-right", target: React__default['default'].createElement(Button$1, { variant: "text", startIcon: React__default['default'].createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
             React__default['default'].createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React__default['default'].createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
         // Safari fix
         style: { minHeight: "32px", height: "auto" } }, lang.language)); })));
@@ -3910,7 +3943,7 @@ var connectorLocalStorageKey = "connectorId";
 var WalletCard = function (_a) {
     var login = _a.login, walletConfig = _a.walletConfig, onDismiss = _a.onDismiss, mb = _a.mb;
     var title = walletConfig.title, Icon = walletConfig.icon;
-    return (React__default['default'].createElement(Button, { width: "100%", variant: "tertiary", onClick: function () {
+    return (React__default['default'].createElement(Button$1, { width: "100%", variant: "tertiary", onClick: function () {
             login(walletConfig.connectorId);
             window.localStorage.setItem(connectorLocalStorageKey, walletConfig.connectorId);
             onDismiss();
@@ -3971,7 +4004,7 @@ var AccountModal = function (_a) {
             React__default['default'].createElement(LinkExternal, { small: true, href: "https://hecoinfo.com/address/" + account, mr: "16px" }, "View on HecoScan"),
             React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default['default'].createElement(Flex, { justifyContent: "center" },
-            React__default['default'].createElement(Button, { scale: "sm", variant: "secondary", onClick: function () {
+            React__default['default'].createElement(Button$1, { scale: "sm", variant: "secondary", onClick: function () {
                     logout();
                     window.localStorage.removeItem(connectorLocalStorageKey);
                     onDismiss();
@@ -3985,7 +4018,7 @@ var useWalletModal = function (login, logout, connectTitle, learnConnect, accoun
     return { onPresentConnectModal: onPresentConnectModal, onPresentAccountModal: onPresentAccountModal };
 };
 
-var MyButton = styled__default['default'](Button)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  background-color: #2f303f !important;\n  color: #ffffff !important;\n"], ["\n  background-color: #2f303f !important;\n  color: #ffffff !important;\n"])));
+var MyButton = styled__default['default'](Button$1)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  background-color: #2f303f !important;\n  color: #ffffff !important;\n"], ["\n  background-color: #2f303f !important;\n  color: #ffffff !important;\n"])));
 var UserBlock = function (_a) {
     var account = _a.account, connectTitle = _a.connectTitle, learnConnect = _a.learnConnect, login = _a.login, logout = _a.logout;
     var _b = useWalletModal(login, logout, connectTitle, learnConnect, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
@@ -4102,9 +4135,9 @@ var templateObject_1$3, templateObject_2, templateObject_3, templateObject_4, te
 var ToastAction = function (_a) {
     var action = _a.action;
     if (action.url.startsWith("http")) {
-        return (React__default['default'].createElement(Button, __assign({ as: "a", scale: "sm", href: action.url }, getExternalLinkProps()), action.text));
+        return (React__default['default'].createElement(Button$1, __assign({ as: "a", scale: "sm", href: action.url }, getExternalLinkProps()), action.text));
     }
-    return (React__default['default'].createElement(Button, { as: reactRouterDom.Link, scale: "sm", to: action.url }, action.text));
+    return (React__default['default'].createElement(Button$1, { as: reactRouterDom.Link, scale: "sm", to: action.url }, action.text));
 };
 
 var types = {
@@ -4202,7 +4235,7 @@ exports.BlockIcon = Icon$1F;
 exports.Box = Box;
 exports.Breadcrumbs = Breadcrumbs;
 exports.BunnyPlaceholderIcon = Icon$1u;
-exports.Button = Button;
+exports.Button = Button$1;
 exports.ButtonMenu = ButtonMenu$1;
 exports.ButtonMenuItem = ButtonMenuItem;
 exports.CalculateIcon = Icon$1r;
@@ -4287,6 +4320,7 @@ exports.Slider = Slider;
 exports.Spinner = Spinner;
 exports.Step = Step;
 exports.Stepper = Stepper;
+exports.StyleButton = Button;
 exports.Svg = Svg;
 exports.SwapVertIcon = Icon$I;
 exports.SyncAltIcon = Icon$H;
