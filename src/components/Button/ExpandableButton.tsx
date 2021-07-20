@@ -11,6 +11,9 @@ interface Props {
 
 const IconButtonStyle = styled(IconButton)`
   background-color: #fff;
+  svg {
+    fill: #000;
+  }
 `
 
 export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children }) => {

@@ -24,7 +24,7 @@ export const lightColors: Colors = {
   cardBorder: "#E7E3EB",
   contrast: "#191326",
   dropdown: "#F6F6F6",
-  invertedContrast: "#010033",
+  invertedContrast: "#ffffff",
   input: "#EBEBEB",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
