@@ -21,4 +21,5 @@ export interface TagProps extends SpaceProps {
     startIcon?: ReactNode;
     endIcon?: ReactNode;
     outline?: boolean;
+    isDark?: boolean;
 }
