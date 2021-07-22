@@ -20,4 +20,5 @@ export interface HeadingProps {
     scale?: any;
     color?: any;
     mb?: any;
+    isDark?: boolean;
 }
