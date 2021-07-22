@@ -259,7 +259,7 @@ Button$1.defaultProps = {
     disabled: false,
 };
 
-var ButtonStyle = styled(StyledButton)(templateObject_1$X || (templateObject_1$X = __makeTemplateObject(["\n  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);\n  background-image: linear-gradient(to left, #ffe505, #ffc81c 0%);\n  color: #010033;\n"], ["\n  box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);\n  background-image: linear-gradient(to left, #ffe505, #ffc81c 0%);\n  color: #010033;\n"])));
+var ButtonStyle = styled(StyledButton)(templateObject_1$X || (templateObject_1$X = __makeTemplateObject(["\n  /* box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2); */\n  background-image: linear-gradient(to left, #ffe505, #ffc81c 0%);\n  color: #010033;\n"], ["\n  /* box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2); */\n  background-image: linear-gradient(to left, #ffe505, #ffc81c 0%);\n  color: #010033;\n"])));
 var Button = function (props) {
     var startIcon = props.startIcon, endIcon = props.endIcon, external = props.external, className = props.className, isLoading = props.isLoading, disabled = props.disabled, children = props.children, rest = __rest(props, ["startIcon", "endIcon", "external", "className", "isLoading", "disabled", "children"]);
     var internalProps = external ? getExternalLinkProps() : {};
@@ -2764,7 +2764,8 @@ var baseColors = {
     primary: "#7A7A7A",
     primaryBright: "#53DEE9",
     primaryDark: "#0098A1",
-    secondary: "#7645D9",
+    // secondary: "#7645D9",
+    secondary: "#ffa402",
     success: "#FDC702",
     warning: "#FFB237",
 };
@@ -2780,7 +2781,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
         violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#0f0f3f", backgroundDisabled: "#3c3742", backgroundAlt: "#010033", cardBorder: "#E7E3EB", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#010033", input: "#38385b", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#ffffff", borderColor: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#fdc702", background: "#0f0f3f", backgroundDisabled: "#3c3742", backgroundAlt: "#010033", cardBorder: "#E7E3EB", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#010033", input: "#38385b", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#ffffff", borderColor: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
         blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
