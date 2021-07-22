@@ -6,6 +6,7 @@ const StepperWrapper = styled.div<ThemedProps>`
   display: flex;
   flex-direction: column;
   width: fit-content;
+  padding: 30px;
 `;
 
 const Stepper: React.FC = ({ children }) => {

@@ -72,4 +72,7 @@ export { default as RefreshIcon } from "./Icons/Refresh";
 export { default as Svg } from "./Svg";
 export { default as VoteIcon } from "./Icons/Vote";
 export { default as ProposalIcon } from "./Icons/Proposal";
+export { default as ArrowLastIcon } from "./Icons/ArrowLast";
+export { default as PresentWonIcon } from "./Icons/PresentWon";
+export { default as SmallDotIcon } from "./Icons/SmallDot";
 export type { SvgProps } from "./types";

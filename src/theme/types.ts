@@ -33,6 +33,7 @@ export type Gradients = {
   blue: string;
   violet: string;
   violetAlt: string;
+  gold: string;
 };
 
 export type Colors = {
@@ -57,6 +58,8 @@ export type Colors = {
   textSubtle: string;
   borderColor: string;
   cardBorder:string;
+  disabled:string;
+  overlay:string;
   // Gradients
   gradients: Gradients;
 

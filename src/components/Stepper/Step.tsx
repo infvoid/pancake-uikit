@@ -5,11 +5,11 @@ import Box from "../Box/Box";
 import { StatusProps, StepProps } from "./types";
 
 const getStepNumberFontColor = ({ theme, status }: StatusProps) => {
-  if (status === "past") {
+  /* if (status === "past") {
     return theme.colors.success;
-  }
-  if (status === "current") {
-    return theme.colors.invertedContrast;
+  } */
+  if (status === "current" || status === "past") {
+    return "#ffffff";
   }
   return theme.colors.textDisabled;
 };
@@ -27,7 +27,7 @@ const Connector = styled.div<StatusProps>`
   top: 50%;
   left: calc(50% - 2px);
   background-color: ${({ theme, status }) =>
-    theme.colors[status === "past" ? "success" : "textDisabled"]};
+    status === "past" ? "#010033" : "#d8d8d8"};
 `;
 
 const ChildrenWrapper = styled(Box)<{ isVisible?: boolean }>`
@@ -36,13 +36,13 @@ const ChildrenWrapper = styled(Box)<{ isVisible?: boolean }>`
   } */
 `;
 
-const ChildrenLeftWrapper = styled(ChildrenWrapper)`
-  display: none;
-  ${({ theme }) => theme.mediaQueries.md} {
-    display: block;
-    margin-right: 16px;
-  }
-`;
+// const ChildrenLeftWrapper = styled(ChildrenWrapper)`
+//   display: none;
+//   ${({ theme }) => theme.mediaQueries.md} {
+//     display: block;
+//     margin-right: 16px;
+//   }
+// `;
 
 const ChildrenRightWrapper = styled(ChildrenWrapper)`
   margin-left: 8px;
@@ -60,10 +60,10 @@ const Wrapper = styled.div`
 export const StepNumber = styled.div<StatusProps>`
   box-shadow: 0px 1px 4px rgba(25, 19, 38, 0.15);
   background-color: ${({ theme, status }) =>
-    theme.colors[status === "current" ? "secondary" : "invertedContrast"]};
-  border: 2px solid
+    status === "current" || status === "past" ? "#010033" : "#d8d8d8"};
+  /* border: 2px solid
     ${({ theme, status }) =>
-      status === "past" ? theme.colors.success : "transparent"};
+    status === "past" ? theme.colors.success : "transparent"}; */
   border-radius: ${({ theme }) => theme.radii.circle};
   color: ${getStepNumberFontColor};
   display: flex;
