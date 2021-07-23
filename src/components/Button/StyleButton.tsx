@@ -6,6 +6,7 @@ import { ButtonProps, scales, variants } from "./types";
 
 const ButtonStyle = styled(StyledButton)`
   /* box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2); */
+  border-radius: 6px;
   background-image: linear-gradient(to left, #ffe505, #ffc81c 0%);
   color: #010033;
 `

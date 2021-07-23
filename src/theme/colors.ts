@@ -27,13 +27,14 @@ export const lightColors: Colors = {
   contrast: "#191326",
   dropdown: "#F6F6F6",
   invertedContrast: "#ffffff",
-  input: "#EBEBEB",
+  input: "#f0f0f0",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
   text: "#000000",
   textDisabled: "#BDC2C4",
   // textSubtle: "#303133",
   textSubtle: "#000000",
+  scroll: "#fdc702",
   borderColor: "#E9EAEB",
   disabled: "#E9EAEB",
   gradients: {
@@ -64,6 +65,7 @@ export const darkColors: Colors = {
   text: "#EAE2FC",
   textDisabled: "#666171",
   textSubtle: "#ffffff",
+  scroll: "#ffffff",
   borderColor: "#524B63",
   disabled: "#524B63",
   gradients: {

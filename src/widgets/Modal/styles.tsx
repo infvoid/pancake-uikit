@@ -12,10 +12,16 @@ export const ModalHeader = styled.div<{ background?: string }>`
   border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
   display: flex;
   padding: 12px 24px;
+  position: relative;
 `;
 
 export const ModalTitle = styled(Flex)`
   align-items: center;
+  flex: 1;
+`;
+export const ModalTitleCenter = styled(Flex)`
+  align-items: center;
+  justify-content: center;
   flex: 1;
 `;
 

@@ -7,10 +7,11 @@ export interface Props {
     theme: DefaultTheme;
 }
 declare const MenuEntry: import("styled-components").StyledComponent<"div", DefaultTheme, Props, never>;
+declare const MenuEntry2: import("styled-components").StyledComponent<"div", DefaultTheme, Props, never>;
 declare const LinkStatus: import("styled-components").StyledComponent<"div", DefaultTheme, import("../../../components/Text").TextProps & {
     color: keyof Colors;
 }, never>;
 declare const LinkLabelMemo: React.MemoExoticComponent<import("styled-components").StyledComponent<"div", DefaultTheme, {
     isPushed: boolean;
 }, never>>;
-export { MenuEntry, LinkStatus, LinkLabelMemo as LinkLabel };
+export { MenuEntry, MenuEntry2, LinkStatus, LinkLabelMemo as LinkLabel };

@@ -32,6 +32,7 @@ export declare type Gradients = {
 };
 export declare type Colors = {
     primary: string;
+    scroll: string;
     primaryBright: string;
     primaryDark: string;
     secondary: string;

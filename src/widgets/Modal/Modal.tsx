@@ -1,7 +1,14 @@
 import React from "react";
+import styled from "styled-components";
 import Heading from "../../components/Heading/Heading";
-import { ModalBody, ModalHeader, ModalTitle, ModalContainer, ModalCloseButton, ModalBackButton } from "./styles";
+import { ModalBody, ModalHeader, ModalTitleCenter, ModalContainer, ModalCloseButton, ModalBackButton } from "./styles";
 import { ModalProps } from "./types";
+
+const ModalCloseButtonStyle = styled.div`
+  position: absolute;
+  right: -10px;
+  top: -9px;
+`
 
 const Modal: React.FC<ModalProps> = ({
   title,
@@ -16,11 +23,11 @@ const Modal: React.FC<ModalProps> = ({
 }) => (
   <ModalContainer minWidth={minWidth} {...props}>
     <ModalHeader background={headerBackground}>
-      <ModalTitle>
+      <ModalTitleCenter>
         {onBack && <ModalBackButton onBack={onBack} />}
-        <Heading>{title}</Heading>
-      </ModalTitle>
-      {!hideCloseButton && <ModalCloseButton onDismiss={onDismiss} />}
+        <Heading mt="16px">{title}</Heading>
+      </ModalTitleCenter>
+      {!hideCloseButton && <ModalCloseButtonStyle><ModalCloseButton onDismiss={onDismiss} /></ModalCloseButtonStyle>}
     </ModalHeader>
     <ModalBody p={bodyPadding}>{children}</ModalBody>
   </ModalContainer>

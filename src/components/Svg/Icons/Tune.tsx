@@ -5,8 +5,16 @@ import { SvgProps } from "../types";
 const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 24 24" {...props}>
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z" />
+      <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g stroke="#000000">
+          <line x1="0" y1="2.91210938" x2="20" y2="2.91210938" id="Path-16" strokeLinecap="round" stroke="currentColor"></line>
+          <line x1="0" y1="10" x2="20" y2="10" id="Path-16-Copy" strokeLinecap="round" stroke="currentColor"></line>
+          <line x1="0" y1="17" x2="20" y2="17" id="Path-16-Copy-2" strokeLinecap="round" stroke="currentColor"></line>
+          <circle fill="#FFFFFF" cx="5.5" cy="2.5" r="2.5"></circle>
+          <circle fill="#FFFFFF" cx="14.5" cy="9.5" r="2.5"></circle>
+          <circle fill="#FFFFFF" cx="4.5" cy="17.5" r="2.5"></circle>
+        </g>
+      </g>
     </Svg>
   );
 };

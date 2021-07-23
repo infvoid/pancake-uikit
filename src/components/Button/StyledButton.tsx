@@ -50,7 +50,7 @@ const StyledButton = styled.button<BaseButtonProps>`
   box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;
   cursor: pointer;
   display: inline-flex;
-  font-family: inherit;
+  font-family: NotoSansCJKkr;
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
@@ -72,12 +72,12 @@ const StyledButton = styled.button<BaseButtonProps>`
 
   ${getDisabledStyles}
   ${variant({
-    prop: "scale",
-    variants: scaleVariants,
-  })}
+  prop: "scale",
+  variants: scaleVariants,
+})}
   ${variant({
-    variants: styleVariants,
-  })}
+  variants: styleVariants,
+})}
   ${layout}
   ${space}
 `;

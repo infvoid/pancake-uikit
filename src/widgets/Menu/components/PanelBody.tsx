@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { SvgProps } from "../../../components/Svg";
 import * as IconModule from "../icons";
 import Accordion from "./Accordion";
-import { MenuEntry, LinkLabel, LinkStatus } from "./MenuEntry";
+import { MenuEntry, MenuEntry2, LinkLabel, LinkStatus } from "./MenuEntry";
 import MenuLink from "./MenuLink";
 import { PanelProps, PushedProps } from "../types";
 
@@ -56,7 +56,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links, isDark
             >
               {isPushed &&
                 entry.items.map((item) => (
-                  <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
+                  <MenuEntry2 key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
                     <MenuLink href={item.href}>
                       <LinkLabel isPushed={isPushed}>{item.label}</LinkLabel>
                       {item.status && (
@@ -65,7 +65,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links, isDark
                         </LinkStatus>
                       )}
                     </MenuLink>
-                  </MenuEntry>
+                  </MenuEntry2>
                 ))}
             </Accordion>
           );
