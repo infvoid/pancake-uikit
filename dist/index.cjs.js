@@ -147,7 +147,7 @@ var getExternalLinkProps = function () { return ({
     rel: "noreferrer noopener",
 }); };
 
-var scales$7 = {
+var scales$8 = {
     MD: "md",
     SM: "sm",
     XS: "xs",
@@ -164,15 +164,15 @@ var variants$3 = {
 
 var _a$4, _b$2;
 var scaleVariants$1 = (_a$4 = {},
-    _a$4[scales$7.MD] = {
+    _a$4[scales$8.MD] = {
         height: "48px",
         padding: "0 24px",
     },
-    _a$4[scales$7.SM] = {
+    _a$4[scales$8.SM] = {
         height: "32px",
         padding: "0 16px",
     },
-    _a$4[scales$7.XS] = {
+    _a$4[scales$8.XS] = {
         height: "20px",
         fontSize: "12px",
         padding: "0 8px",
@@ -270,7 +270,7 @@ Button$1.defaultProps = {
     isLoading: false,
     external: false,
     variant: variants$3.PRIMARY,
-    scale: scales$7.MD,
+    scale: scales$8.MD,
     disabled: false,
 };
 
@@ -302,7 +302,7 @@ Button.defaultProps = {
     isLoading: false,
     external: false,
     variant: variants$3.PRIMARY,
-    scale: scales$7.MD,
+    scale: scales$8.MD,
     disabled: false,
 };
 var templateObject_1$X;
@@ -1150,7 +1150,7 @@ var Alert = function (_a) {
 };
 var templateObject_1$S, templateObject_2$n, templateObject_3$a, templateObject_4$7;
 
-var scales$6 = {
+var scales$7 = {
     SM: "sm",
     MD: "md",
     LG: "lg",
@@ -1170,13 +1170,13 @@ var getBoxShadow$1 = function (_a) {
     return theme.shadows.inset;
 };
 var getHeight = function (_a) {
-    var _b = _a.scale, scale = _b === void 0 ? scales$6.MD : _b;
+    var _b = _a.scale, scale = _b === void 0 ? scales$7.MD : _b;
     switch (scale) {
-        case scales$6.SM:
+        case scales$7.SM:
             return "32px";
-        case scales$6.LG:
+        case scales$7.LG:
             return "48px";
-        case scales$6.MD:
+        case scales$7.MD:
         default:
             return "40px";
     }
@@ -1201,7 +1201,7 @@ var Input$1 = styled__default['default'].input(templateObject_1$R || (templateOb
     return theme.shadows.focus;
 });
 Input$1.defaultProps = {
-    scale: scales$6.MD,
+    scale: scales$7.MD,
     isSuccess: false,
     isWarning: false,
 };
@@ -1277,7 +1277,7 @@ var StyledButtonMenu = styled__default['default'].div(templateObject_1$N || (tem
 var templateObject_1$N;
 
 var ButtonMenu$1 = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$7.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$3.PRIMARY : _d, onItemClick = _a.onItemClick, children = _a.children;
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$8.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$3.PRIMARY : _d, onItemClick = _a.onItemClick, children = _a.children;
     return (React__default['default'].createElement(StyledButtonMenu, { variant: variant }, React.Children.map(children, function (child, index) {
         return React.cloneElement(child, {
             isActive: activeIndex === index,
@@ -1386,7 +1386,7 @@ CardRibbon.defaultProps = {
 };
 var templateObject_1$H;
 
-var scales$5 = {
+var scales$6 = {
     SM: "sm",
     MD: "md",
 };
@@ -1394,9 +1394,9 @@ var scales$5 = {
 var getScale$3 = function (_a) {
     var scale = _a.scale;
     switch (scale) {
-        case scales$5.SM:
+        case scales$6.SM:
             return "24px";
-        case scales$5.MD:
+        case scales$6.MD:
         default:
             return "32px";
     }
@@ -1418,7 +1418,7 @@ var Checkbox = styled__default['default'].input.attrs({ type: "checkbox" })(temp
     return theme.colors.success;
 });
 Checkbox.defaultProps = {
-    scale: scales$5.MD,
+    scale: scales$6.MD,
 };
 var templateObject_1$G;
 
@@ -1509,7 +1509,7 @@ var tags = {
     H5: "h5",
     H6: "h6",
 };
-var sizes = {
+var scales$5 = {
     MD: "md",
     LG: "lg",
     XL: "xl",
@@ -1518,32 +1518,32 @@ var sizes = {
 
 var _a$3;
 var style = (_a$3 = {},
-    _a$3[sizes.MD] = {
+    _a$3[scales$5.MD] = {
         fontSize: "20px",
         fontSizeLg: "20px",
     },
-    _a$3[sizes.LG] = {
+    _a$3[scales$5.LG] = {
         fontSize: "24px",
         fontSizeLg: "24px",
     },
-    _a$3[sizes.XL] = {
+    _a$3[scales$5.XL] = {
         fontSize: "32px",
         fontSizeLg: "40px",
     },
-    _a$3[sizes.XXL] = {
+    _a$3[scales$5.XXL] = {
         fontSize: "48px",
         fontSizeLg: "64px",
     },
     _a$3);
-var Heading = styled__default['default'](Text).attrs({ bold: true })(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
-    var size = _a.size;
-    return style[size || sizes.MD].fontSize;
+var Heading = styled__default['default'](Text).attrs({ bold: true })(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
+    var scale = _a.scale;
+    return style[scale || scales$5.MD].fontSize;
 }, function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.lg;
 }, function (_a) {
-    var size = _a.size;
-    return style[size || sizes.MD].fontSizeLg;
+    var scale = _a.scale;
+    return style[scale || scales$5.MD].fontSizeLg;
 });
 Heading.defaultProps = {
     as: tags.H2,
@@ -2553,7 +2553,7 @@ var scaleKeyValues = {
     },
 };
 var getScale = function (property) { return function (_a) {
-    var _b = _a.scale, scale = _b === void 0 ? scales$5.MD : _b;
+    var _b = _a.scale, scale = _b === void 0 ? scales$6.MD : _b;
     return scaleKeyValues[scale][property];
 }; };
 var Handle = styled__default['default'].div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"])), function (_a) {
