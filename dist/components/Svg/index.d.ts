@@ -23,6 +23,7 @@ export { default as ChevronDownIcon } from "./Icons/ChevronDown";
 export { default as ChevronLeftIcon } from "./Icons/ChevronLeft";
 export { default as ChevronRightIcon } from "./Icons/ChevronRight";
 export { default as ChevronUpIcon } from "./Icons/ChevronUp";
+export { default as ChevronIcon } from "./Icons/Chevron";
 export { default as CloseIcon } from "./Icons/Close";
 export { default as CogIcon } from "./Icons/Cog";
 export { default as CommunityIcon } from "./Icons/Community";

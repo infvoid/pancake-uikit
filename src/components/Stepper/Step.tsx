@@ -26,11 +26,14 @@ const Connector = styled.div<StatusProps>`
   height: 100%;
   top: 50%;
   left: calc(50% - 2px);
+  @media screen and (max-width: 1024px) {
+    top: 20%;
+  }
   background-color: ${({ theme, status }) =>
     status === "past" ? "#010033" : "#d8d8d8"};
 `;
 
-const ChildrenWrapper = styled(Box)<{ isVisible?: boolean }>`
+const ChildrenWrapper = styled(Box) <{ isVisible?: boolean }>`
   /* ${({ theme }) => theme.mediaQueries.md} {
     visibility: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
   } */
@@ -54,7 +57,7 @@ const ChildrenRightWrapper = styled(ChildrenWrapper)`
 const Wrapper = styled.div`
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 export const StepNumber = styled.div<StatusProps>`

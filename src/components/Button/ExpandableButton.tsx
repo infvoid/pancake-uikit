@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ChevronDownIcon, ChevronUpIcon } from "../Svg";
+import { ChevronDownIcon, ChevronIcon } from "../Svg";
 import Button from "./Button";
 import IconButton from "./IconButton";
 
@@ -20,7 +20,7 @@ export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children 
   return (
     <IconButtonStyle aria-label="Hide or show expandable content" onClick={onClick}>
       {children}
-      {expanded ? <ChevronUpIcon color="invertedContrast" /> : <ChevronDownIcon color="invertedContrast" />}
+      {expanded ? <ChevronIcon width="32px" color="invertedContrast" /> : <ChevronDownIcon color="invertedContrast" />}
     </IconButtonStyle>
   );
 };
@@ -34,7 +34,7 @@ export const ExpandableLabel: React.FC<Props> = ({ onClick, expanded, children }
       variant="text"
       aria-label="Hide or show expandable content"
       onClick={onClick}
-      endIcon={expanded ? <ChevronUpIcon color="primary" /> : <ChevronDownIcon color="primary" />}
+      endIcon={expanded ? <ChevronIcon width="32px" color="primary" /> : <ChevronDownIcon color="primary" />}
     >
       {children}
     </Button>
