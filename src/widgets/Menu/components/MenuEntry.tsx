@@ -21,7 +21,8 @@ const rainbowAnimation = keyframes`
 `;
 
 const LinkLabel = styled.div<{ isPushed: boolean }>`
-  color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
+  color: ${({ isPushed, theme }) =>
+    isPushed ? theme.colors.textSubtle2 : "transparent"};
   transition: color 0.4s;
   flex-grow: 1;
 `;
@@ -33,9 +34,11 @@ const MenuEntry = styled.div<Props>`
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
-  background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
+  background-color: ${({ secondary, theme }) =>
+    secondary ? theme.colors.background : "transparent"};
   color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
+  box-shadow: ${({ isActive, theme }) =>
+    isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none"};
 
   a {
     display: flex;
@@ -78,7 +81,11 @@ const MenuEntry2 = styled.div<Props>`
     width: 100%;
     height: 100%;
   }
-
+  .active {
+    div {
+      color: ${({ theme }) => (!theme.isDark ? "#000" : "#fff")};
+    }
+  }
   svg {
     fill: ${({ theme }) => theme.colors.textSubtle};
   }
@@ -103,16 +110,19 @@ MenuEntry.defaultProps = {
   role: "button",
 };
 
-const LinkStatus = styled(Text) <{ color: keyof Colors }>`
-  border-radius: ${({ theme }) => theme.radii.default};
+const LinkStatus = styled(Text)<{ color: string }>`
+  border-radius: ${({ color }) => color};
   padding: 0 8px;
   border: 2px solid;
-  border-color: ${({ theme, color }) => theme.colors[color]};
+  border-color: ${({ color }) => color};
   box-shadow: none;
-  color: ${({ theme, color }) => theme.colors[color]};
+  color: ${({ color }) => color};
   margin-left: 8px;
 `;
 
-const LinkLabelMemo = React.memo(LinkLabel, (prev, next) => prev.isPushed === next.isPushed);
+const LinkLabelMemo = React.memo(
+  LinkLabel,
+  (prev, next) => prev.isPushed === next.isPushed
+);
 
 export { MenuEntry, MenuEntry2, LinkStatus, LinkLabelMemo as LinkLabel };

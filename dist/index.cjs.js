@@ -2912,7 +2912,7 @@ var additionalColors = {
 };
 var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors), { background: "#f6f6f6", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", cardBorder: "#E7E3EB", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#ffffff", input: "#f0f0f0", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#000000", textDisabled: "#BDC2C4", 
     // textSubtle: "#303133",
-    textSubtle: "#000000", scroll: "#fdc702", borderColor: "#E9EAEB", disabled: "#E9EAEB", gradients: {
+    textSubtle: "#000000", textSubtle2: "#2d2d2d", scroll: "#fdc702", borderColor: "#E9EAEB", disabled: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
         blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
@@ -2920,7 +2920,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
         gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#fdc702", background: "#0f0f3f", backgroundDisabled: "#3c3742", backgroundAlt: "#010033", cardBorder: "#E7E3EB", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#010033", input: "#38385b", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#ffffff", scroll: "#ffffff", borderColor: "#524B63", disabled: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#fdc702", background: "#0f0f3f", backgroundDisabled: "#3c3742", backgroundAlt: "#010033", cardBorder: "#E7E3EB", contrast: "#FFFFFF", dropdown: "#1E1D20", invertedContrast: "#010033", input: "#38385b", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#ffffff", textSubtle2: "#ffffff", scroll: "#ffffff", borderColor: "#524B63", disabled: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
         blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
@@ -3243,7 +3243,7 @@ var Modal = function (_a) {
 };
 var templateObject_1$i;
 
-var Overlay = styled__default['default'].div.attrs({ role: "presentation" })(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
+var Overlay = styled__default['default'].div.attrs({ role: "presentation" })(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(114,114,114);\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(114,114,114);\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
     var show = _a.show;
     return (show ? 0.6 : 0);
 }, function (_a) {
@@ -3757,11 +3757,14 @@ var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 56;
 
 var rainbowAnimation = styled.keyframes(templateObject_1$d || (templateObject_1$d = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
-var LinkLabel = styled__default['default'].div(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
+var LinkLabel = styled__default['default'].div(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ",
+    ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
-    return (isPushed ? theme.colors.textSubtle : "transparent");
+    return isPushed ? theme.colors.textSubtle2 : "transparent";
 });
-var MenuEntry = styled__default['default'].div(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+var MenuEntry = styled__default['default'].div(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ",
+    ";\n  color: ", ";\n  box-shadow: ",
+    ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 32px" : "0 16px");
 }, function (_a) {
@@ -3769,13 +3772,13 @@ var MenuEntry = styled__default['default'].div(templateObject_3$2 || (templateOb
     return (secondary ? "14px" : "16px");
 }, function (_a) {
     var secondary = _a.secondary, theme = _a.theme;
-    return (secondary ? theme.colors.background : "transparent");
+    return secondary ? theme.colors.background : "transparent";
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
-    return (isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");
+    return isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none";
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
@@ -3786,7 +3789,7 @@ var MenuEntry = styled__default['default'].div(templateObject_3$2 || (templateOb
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;
 });
-var MenuEntry2 = styled__default['default'].div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: transparent;\n  color: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: transparent;\n  color: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+var MenuEntry2 = styled__default['default'].div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: transparent;\n  color: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n  .active {\n    div {\n      color: ", ";\n    }\n  }\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: transparent;\n  color: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n  .active {\n    div {\n      color: ", ";\n    }\n  }\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 50px" : "0 16px");
 }, function (_a) {
@@ -3795,6 +3798,9 @@ var MenuEntry2 = styled__default['default'].div(templateObject_4$1 || (templateO
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
+}, function (_a) {
+    var theme = _a.theme;
+    return (!theme.isDark ? "#000" : "#fff");
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
@@ -3811,14 +3817,14 @@ MenuEntry.defaultProps = {
     role: "button",
 };
 var LinkStatus = styled__default['default'](Text)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  border-radius: ", ";\n  padding: 0 8px;\n  border: 2px solid;\n  border-color: ", ";\n  box-shadow: none;\n  color: ", ";\n  margin-left: 8px;\n"], ["\n  border-radius: ", ";\n  padding: 0 8px;\n  border: 2px solid;\n  border-color: ", ";\n  box-shadow: none;\n  color: ", ";\n  margin-left: 8px;\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.radii.default;
+    var color = _a.color;
+    return color;
 }, function (_a) {
-    var theme = _a.theme, color = _a.color;
-    return theme.colors[color];
+    var color = _a.color;
+    return color;
 }, function (_a) {
-    var theme = _a.theme, color = _a.color;
-    return theme.colors[color];
+    var color = _a.color;
+    return color;
 });
 var LinkLabelMemo = React__default['default'].memo(LinkLabel, function (prev, next) { return prev.isPushed === next.isPushed; });
 var templateObject_1$d, templateObject_2$5, templateObject_3$2, templateObject_4$1, templateObject_5$1;
@@ -3886,7 +3892,7 @@ var PanelBody = function (_a) {
             React__default['default'].createElement(MenuLink, { href: entry.href, onClick: handleClick },
                 iconElement,
                 React__default['default'].createElement(LinkLabelMemo, { isPushed: isPushed }, entry.label),
-                entry.status && (React__default['default'].createElement(LinkStatus, { color: entry.status.color, fontSize: "14px" }, entry.status.text)))));
+                entry.status && (React__default['default'].createElement(LinkStatus, { color: "rgba(45,45,45,1)", fontSize: "14px" }, entry.status.text)))));
     })));
 };
 var templateObject_1$b;
@@ -4096,9 +4102,9 @@ var WalletCard = function (_a) {
             login(walletConfig.connectorId);
             window.localStorage.setItem(connectorLocalStorageKey, walletConfig.connectorId);
             onDismiss();
-        }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
-        React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
-        React__default['default'].createElement(Icon, { width: "32px" })));
+        }, style: { justifyContent: "flex-start", borderRadius: "inherit", background: "none", borderBottom: "1px solid #d8d8d8" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
+        React__default['default'].createElement(Icon, { width: "32px" }),
+        React__default['default'].createElement(Text, { bold: true, color: "primary", ml: "16px" }, title)));
 };
 
 var HelpLink = styled__default['default'](Link)(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
@@ -4107,8 +4113,8 @@ var ConnectModal = function (_a) {
     return (React__default['default'].createElement(Modal, { title: connectTitle, onDismiss: onDismiss },
         connectors.map(function (entry, index) { return (React__default['default'].createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
         React__default['default'].createElement(HelpLink, { href: "https://docs.hubdao.io/", external: true },
-            React__default['default'].createElement(Icon$1h, { color: "primary", mr: "6px" }),
-            learnConnect)));
+            learnConnect,
+            React__default['default'].createElement(Icon$1h, { color: "primary", ml: "6px" }))));
 };
 var ConnectModal$1 = React__default['default'].memo(ConnectModal, function (prevProps, nextProps) { return prevProps.connectTitle === nextProps.connectTitle && prevProps.learnConnect === nextProps.learnConnect; });
 var templateObject_1$7;

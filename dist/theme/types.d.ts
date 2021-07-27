@@ -52,6 +52,7 @@ export declare type Colors = {
     text: string;
     textDisabled: string;
     textSubtle: string;
+    textSubtle2: string;
     borderColor: string;
     cardBorder: string;
     disabled: string;

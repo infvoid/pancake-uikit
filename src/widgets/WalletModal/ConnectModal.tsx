@@ -36,8 +36,8 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, connectT
       href="https://docs.hubdao.io/"
       external
     >
-      <HelpIcon color="primary" mr="6px" />
       {learnConnect}
+      <HelpIcon color="primary" ml="6px" />
     </HelpLink>
   </Modal>
 );

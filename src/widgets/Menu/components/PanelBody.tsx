@@ -76,7 +76,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links, isDark
               {iconElement}
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
               {entry.status && (
-                <LinkStatus color={entry.status.color} fontSize="14px">
+                <LinkStatus color="rgba(45,45,45,1)" fontSize="14px">
                   {entry.status.text}
                 </LinkStatus>
               )}
