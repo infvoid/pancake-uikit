@@ -21,6 +21,7 @@ export declare type Shadows = {
     warning: string;
     focus: string;
     focus2: string;
+    focus3: string;
     inset: string;
 };
 export declare type Gradients = {

@@ -1262,7 +1262,7 @@ var Input$1 = styled__default['default'].input(templateObject_1$S || (templateOb
     return theme.colors.textDisabled;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.focus3;
 });
 Input$1.defaultProps = {
     scale: scales$7.MD,
@@ -1471,10 +1471,10 @@ var Checkbox = styled__default['default'].input.attrs({ type: "checkbox" })(temp
     return theme.shadows.inset;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.focus3;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.focus3;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.success;
@@ -1924,10 +1924,10 @@ var Radio = styled__default['default'].input.attrs({ type: "radio" })(templateOb
     return theme.shadows.inset;
 }, getCheckedScale, getCheckedScale, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus2;
+    return theme.shadows.focus3;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus2;
+    return theme.shadows.focus3;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.success;
@@ -2624,10 +2624,10 @@ var Handle = styled__default['default'].div(templateObject_1$l || (templateObjec
 }, getScale("handleHeight"), getScale("handleLeft"), getScale("handleTop"), getScale("handleWidth"));
 var Input = styled__default['default'].input(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), Handle, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.focus3;
 }, Handle, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.focus3;
 });
 var StyledToggle = styled__default['default'].div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
@@ -2677,6 +2677,7 @@ var shadows = {
     warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
     focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
     focus2: "0px 0px 0px 1px #0f0f3f, 0px 0px 0px 4px #010033",
+    focus3: "0px 0px 0px 1px rgb(253,199,2), 0px 0px 0px 4px rgb(255,229,5)",
     inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];

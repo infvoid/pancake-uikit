@@ -25,6 +25,7 @@ export type Shadows = {
   warning: string;
   focus: string;
   focus2: string;
+  focus3: string;
   inset: string;
 };
 
