@@ -389,7 +389,7 @@ var Icon$1z = function (props) {
 
 var Icon$1y = function (props) {
     styled.useTheme();
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "65 65" }, props),
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 75  75" }, props),
         React__default['default'].createElement("g", null,
             React__default['default'].createElement("g", null,
                 React__default['default'].createElement("circle", { fill: "#4c4142", cx: "36.67", cy: "36.67", r: "36.67" }),
@@ -2093,7 +2093,7 @@ var StyledStep = styled__default['default'](Flex)(templateObject_1$p || (templat
     var theme = _a.theme;
     return theme.mediaQueries.md;
 });
-var Connector = styled__default['default'].div(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  position: absolute;\n  width: 4px;\n  height: 100%;\n  top: 50%;\n  left: calc(50% - 2px);\n  @media screen and (max-width: 1024px) {\n    top: 20%;\n  }\n  background-color: ", ";\n"], ["\n  position: absolute;\n  width: 4px;\n  height: 100%;\n  top: 50%;\n  left: calc(50% - 2px);\n  @media screen and (max-width: 1024px) {\n    top: 20%;\n  }\n  background-color: ",
+var Connector = styled__default['default'].div(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  position: absolute;\n  width: 4px;\n  height: 100%;\n  top: 30%;\n  left: calc(50% - 2px);\n  @media screen and (max-width: 1024px) {\n    top: 20%;\n  }\n  background-color: ", ";\n"], ["\n  position: absolute;\n  width: 4px;\n  height: 100%;\n  top: 30%;\n  left: calc(50% - 2px);\n  @media screen and (max-width: 1024px) {\n    top: 20%;\n  }\n  background-color: ",
     ";\n"])), function (_a) {
     _a.theme; var status = _a.status;
     return status === "past" ? "#010033" : "#d8d8d8";

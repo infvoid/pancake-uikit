@@ -7,7 +7,7 @@ const Icon: React.FC<SvgProps> = (props) => {
   const theme = useTheme();
 
   return (
-    <Svg viewBox="65 65" {...props}>
+    <Svg viewBox="0 0 75  75" {...props}>
       <g>
         <g >
             <circle fill="#4c4142" cx="36.67" cy="36.67" r="36.67" />

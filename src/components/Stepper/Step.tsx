@@ -24,7 +24,7 @@ const Connector = styled.div<StatusProps>`
   position: absolute;
   width: 4px;
   height: 100%;
-  top: 50%;
+  top: 30%;
   left: calc(50% - 2px);
   @media screen and (max-width: 1024px) {
     top: 20%;
@@ -33,7 +33,7 @@ const Connector = styled.div<StatusProps>`
     status === "past" ? "#010033" : "#d8d8d8"};
 `;
 
-const ChildrenWrapper = styled(Box) <{ isVisible?: boolean }>`
+const ChildrenWrapper = styled(Box)<{ isVisible?: boolean }>`
   /* ${({ theme }) => theme.mediaQueries.md} {
     visibility: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
   } */
@@ -66,7 +66,7 @@ export const StepNumber = styled.div<StatusProps>`
     status === "current" || status === "past" ? "#010033" : "#d8d8d8"};
   /* border: 2px solid
     ${({ theme, status }) =>
-    status === "past" ? theme.colors.success : "transparent"}; */
+      status === "past" ? theme.colors.success : "transparent"}; */
   border-radius: ${({ theme }) => theme.radii.circle};
   color: ${getStepNumberFontColor};
   display: flex;
