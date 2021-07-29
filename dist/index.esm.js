@@ -1943,7 +1943,7 @@ var getCursorStyle = function (_a) {
 };
 var getBaseThumbStyles = function (_a) {
     var isMax = _a.isMax, disabled = _a.disabled;
-    return "\n  -webkit-appearance: none;\n  background-image: url(" + (isMax ? "/images/bunnyhead-main.svg" : "/images/bunnyhead-max.svg") + ");\n  cursor: " + getCursorStyle + ";\n  width: 24px;\n  height: 32px;\n  filter: " + (disabled ? "grayscale(100%)" : "none") + ";\n  transform: translate(-2px, -2px);\n  transition: 200ms transform;\n\n  &:hover {\n    transform: " + (disabled ? "scale(1) translate(-2px, -2px)" : "scale(1.1) translate(-3px, -3px)") + ";\n  }\n";
+    return "\n  -webkit-appearance: none;\n  background-image: url(" + (!isMax ? "/images/bunnyhead-main.svg" : "/images/bunnyhead-max.svg") + ");\n  cursor: " + getCursorStyle + ";\n  width: 24px;\n  height: 32px;\n  filter: " + (disabled ? "grayscale(100%)" : "none") + ";\n  transform: translate(-2px, -2px);\n  transition: 200ms transform;\n\n  &:hover {\n    transform: " + (disabled ? "scale(1) translate(-2px, -2px)" : "scale(1.1) translate(-3px, -3px)") + ";\n  }\n";
 };
 var SliderLabelContainer = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  bottom: 0;\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 30px);\n"], ["\n  bottom: 0;\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 30px);\n"])));
 var SliderLabel = styled(Text)(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  bottom: 0;\n  font-size: 12px;\n  left: ", ";\n  position: absolute;\n  text-align: center;\n  min-width: 24px; // Slider thumb size\n"], ["\n  bottom: 0;\n  font-size: 12px;\n  left: ", ";\n  position: absolute;\n  text-align: center;\n  min-width: 24px; // Slider thumb size\n"])), function (_a) {
@@ -1956,14 +1956,11 @@ var BunnyButt = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTem
 });
 var BunnySlider = styled.div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"], ["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"])));
 var StyledInput = styled.input(templateObject_5$5 || (templateObject_5$5 = __makeTemplateObject(["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    ", "\n  }\n\n  ::-moz-range-thumb {\n    ", "\n\n    background-color: transparent;\n    border: 0;\n  }\n\n  ::-ms-thumb {\n    ", "\n  }\n"], ["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    ", "\n  }\n\n  ::-moz-range-thumb {\n    ", "\n\n    background-color: transparent;\n    border: 0;\n  }\n\n  ::-ms-thumb {\n    ", "\n  }\n"])), getCursorStyle, getBaseThumbStyles, getBaseThumbStyles, getBaseThumbStyles);
-var BarBackground = styled.div(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  background-color: ", ";\n  height: 2px;\n  position: absolute;\n  top: 18px;\n  width: 100%;\n"], ["\n  background-color: ", ";\n  height: 2px;\n  position: absolute;\n  top: 18px;\n  width: 100%;\n"])), function (_a) {
+var BarBackground = styled.div(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  background-color: ", ";\n  height: 2px;\n  position: absolute;\n  top: 18px;\n  width: 95%;\n  left: 10px;\n"], ["\n  background-color: ", ";\n  height: 2px;\n  position: absolute;\n  top: 18px;\n  width: 95%;\n  left: 10px;\n"])), function (_a) {
     var theme = _a.theme, disabled = _a.disabled;
     return theme.colors[disabled ? "textDisabled" : "inputSecondary"];
 });
-var BarProgress = styled.div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  background-color: ", ";\n  filter: ", ";\n  height: 10px;\n  position: absolute;\n  top: 18px;\n"], ["\n  background-color: ", ";\n  filter: ", ";\n  height: 10px;\n  position: absolute;\n  top: 18px;\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.colors.primary;
-}, function (_a) {
+var BarProgress = styled.div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  background-color: transparent;\n  filter: ", ";\n  background: linear-gradient(to right, rgb(255, 242,0), rgb(254, 163, 0) 100%);\n  border-radius: 10px;\n  height: 10px;\n  position: absolute;\n  top: 18px;\n"], ["\n  background-color: transparent;\n  filter: ", ";\n  background: linear-gradient(to right, rgb(255, 242,0), rgb(254, 163, 0) 100%);\n  border-radius: 10px;\n  height: 10px;\n  position: absolute;\n  top: 18px;\n"])), function (_a) {
     var disabled = _a.disabled;
     return (disabled ? "grayscale(100%)" : "none");
 });

@@ -23,7 +23,7 @@ const getCursorStyle = ({ disabled = false }: DisabledProp) => {
 
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;
-  background-image: url(${isMax ? "/images/bunnyhead-main.svg" : "/images/bunnyhead-max.svg"});
+  background-image: url(${!isMax ? "/images/bunnyhead-main.svg" : "/images/bunnyhead-max.svg"});
   cursor: ${getCursorStyle};
   width: 24px;
   height: 32px;
@@ -93,12 +93,15 @@ export const BarBackground = styled.div<DisabledProp>`
   height: 2px;
   position: absolute;
   top: 18px;
-  width: 100%;
+  width: 95%;
+  left: 10px;
 `;
 
 export const BarProgress = styled.div<DisabledProp>`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: transparent;
   filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
+  background: linear-gradient(to right, rgb(255, 242,0), rgb(254, 163, 0) 100%);
+  border-radius: 10px;
   height: 10px;
   position: absolute;
   top: 18px;
