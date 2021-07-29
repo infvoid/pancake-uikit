@@ -11,6 +11,7 @@ export { default as BinanceIcon } from "./Icons/Binance";
 export { default as BlockIcon } from "./Icons/Block";
 export { default as BunnyPlaceholderIcon } from "./Icons/BunnyPlaceholder";
 export { default as BunnyPlaceholderLogo } from "./Icons/BunnyPlaceholderLogo";
+export { default as DSTLogoIcon } from "./Icons/DSTLogo";
 export { default as BunnyPlaceholderHD } from "./Icons/BunnyPlaceholderHD";
 export { default as Cards } from "./Icons/Cards";
 export { default as CardViewIcon } from "./Icons/CardView";
