@@ -89,12 +89,13 @@ export const StyledInput = styled.input<StyledInputProps>`
 `;
 
 export const BarBackground = styled.div<DisabledProp>`
-  background-color: ${({ theme, disabled }) => theme.colors[disabled ? "textDisabled" : "inputSecondary"]};
-  height: 2px;
+  background-color: ${({ theme, disabled }) => disabled ?theme.colors[ "textDisabled"]:"rgb(173,173,173)"};
+  height: 15px;
   position: absolute;
   top: 18px;
-  width: 95%;
+  width: 90%;
   left: 10px;
+  border-radius:15px;
 `;
 
 export const BarProgress = styled.div<DisabledProp>`
@@ -102,7 +103,7 @@ export const BarProgress = styled.div<DisabledProp>`
   filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
   background: linear-gradient(to right, rgb(255, 242,0), rgb(254, 163, 0) 100%);
   border-radius: 10px;
-  height: 10px;
+  height: 15px;
   position: absolute;
   top: 18px;
 `;
