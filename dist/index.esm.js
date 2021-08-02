@@ -1956,7 +1956,7 @@ var BunnyButt = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTem
 });
 var BunnySlider = styled.div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"], ["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"])));
 var StyledInput = styled.input(templateObject_5$5 || (templateObject_5$5 = __makeTemplateObject(["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    ", "\n  }\n\n  ::-moz-range-thumb {\n    ", "\n\n    background-color: transparent;\n    border: 0;\n  }\n\n  ::-ms-thumb {\n    ", "\n  }\n"], ["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    ", "\n  }\n\n  ::-moz-range-thumb {\n    ", "\n\n    background-color: transparent;\n    border: 0;\n  }\n\n  ::-ms-thumb {\n    ", "\n  }\n"])), getCursorStyle, getBaseThumbStyles, getBaseThumbStyles, getBaseThumbStyles);
-var BarBackground = styled.div(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  background-color: ", ";\n  height: 15px;\n  position: absolute;\n  top: 18px;\n  width: 95%;\n  left: 10px;\n  border-radius:15px;\n"], ["\n  background-color: ", ";\n  height: 15px;\n  position: absolute;\n  top: 18px;\n  width: 95%;\n  left: 10px;\n  border-radius:15px;\n"])), function (_a) {
+var BarBackground = styled.div(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  background-color: ", ";\n  height: 15px;\n  position: absolute;\n  top: 18px;\n  width: 90%;\n  left: 10px;\n  border-radius:15px;\n"], ["\n  background-color: ", ";\n  height: 15px;\n  position: absolute;\n  top: 18px;\n  width: 90%;\n  left: 10px;\n  border-radius:15px;\n"])), function (_a) {
     var theme = _a.theme, disabled = _a.disabled;
     return disabled ? theme.colors["textDisabled"] : "rgb(173,173,173)";
 });
@@ -4176,7 +4176,7 @@ var UserBlock = function (_a) {
 var templateObject_1$5;
 // export default React.memo(UserBlock, (prevProps, nextProps) => prevProps.account === nextProps.account);
 
-var StyledAvatar = styled.div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
+var StyledAvatar = styled.div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n  width: 32px;\n  height: 32px;\n  border-radius: 100%;\n  overflow: hidden; \n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n  width: 32px;\n  height: 32px;\n  border-radius: 100%;\n  overflow: hidden; \n  img {\n    border-radius: 50%;\n  }\n"])));
 var Pip = styled.div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.failure;
