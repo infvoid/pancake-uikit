@@ -26,6 +26,7 @@ export declare type Shadows = {
 };
 export declare type Gradients = {
     bubblegum: string;
+    bubblegum2: string;
     cardHeader: string;
     blue: string;
     violet: string;
@@ -46,6 +47,7 @@ export declare type Colors = {
     dropdown: string;
     invertedContrast: string;
     input: string;
+    input2: string;
     inputSecondary: string;
     background: string;
     backgroundDisabled: string;
