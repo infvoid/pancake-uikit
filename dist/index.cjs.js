@@ -95,22 +95,22 @@ Svg.defaultProps = {
 };
 var templateObject_1$10, templateObject_2$o, templateObject_3$b;
 
-var Icon$1O = function (props) {
+var Icon$1P = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM15.88 8.29L10 14.17L8.12 12.29C7.73 11.9 7.1 11.9 6.71 12.29C6.32 12.68 6.32 13.31 6.71 13.7L9.3 16.29C9.69 16.68 10.32 16.68 10.71 16.29L17.3 9.7C17.69 9.31 17.69 8.68 17.3 8.29C16.91 7.9 16.27 7.9 15.88 8.29Z" })));
 };
 
-var Icon$1N = function (props) {
+var Icon$1O = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM13 17H11V15H13V17Z" })));
 };
 
-var Icon$1M = function (props) {
+var Icon$1N = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22ZM12 4C16.42 4 20 7.58 20 12C20 13.85 19.37 15.55 18.31 16.9L7.1 5.69C8.45 4.63 10.15 4 12 4ZM5.69 7.1L16.9 18.31C15.55 19.37 13.85 20 12 20C7.58 20 4 16.42 4 12C4 10.15 4.63 8.45 5.69 7.1Z" })));
 };
 
-var Icon$1L = function (props) {
+var Icon$1M = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M11 7H13V9H11V7ZM12 17C12.55 17 13 16.55 13 16V12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12V16C11 16.55 11.45 17 12 17ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" })));
 };
@@ -313,37 +313,37 @@ var IconButton = styled__default['default'](Button$1)(templateObject_1$X || (tem
 });
 var templateObject_1$X;
 
-var Icon$1K = function (props) {
+var Icon$1L = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" })));
 };
 
-var Icon$1J = function (props) {
+var Icon$1K = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M19 11H7.82998L12.71 6.12C13.1 5.73 13.1 5.09 12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7L4.70998 11.29C4.31998 11.68 4.31998 12.31 4.70998 12.7L11.3 19.29C11.69 19.68 12.32 19.68 12.71 19.29C13.1 18.9 13.1 18.27 12.71 17.88L7.82998 13H19C19.55 13 20 12.55 20 12C20 11.45 19.55 11 19 11Z" })));
 };
 
-var Icon$1I = function (props) {
+var Icon$1J = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M11 5V16.17L6.11997 11.29C5.72997 10.9 5.08997 10.9 4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7L11.29 19.29C11.68 19.68 12.31 19.68 12.7 19.29L19.29 12.7C19.68 12.31 19.68 11.68 19.29 11.29C18.9 10.9 18.27 10.9 17.88 11.29L13 16.17V5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5Z" })));
 };
 
-var Icon$1H = function (props) {
+var Icon$1I = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M8.71005 11.71L11.3001 14.3C11.6901 14.69 12.3201 14.69 12.7101 14.3L15.3001 11.71C15.9301 11.08 15.4801 10 14.5901 10H9.41005C8.52005 10 8.08005 11.08 8.71005 11.71Z" })));
 };
 
-var Icon$1G = function (props) {
+var Icon$1H = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M8.71005 12.29L11.3001 9.69997C11.6901 9.30997 12.3201 9.30997 12.7101 9.69997L15.3001 12.29C15.9301 12.92 15.4801 14 14.5901 14H9.41005C8.52005 14 8.08005 12.92 8.71005 12.29Z" })));
 };
 
-var Icon$1F = function (props) {
+var Icon$1G = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z" })));
 };
 
-var Icon$1E = function (props) {
+var Icon$1F = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 21 21" }, props),
         React__default['default'].createElement("g", { stroke: "none", strokeWidth: "1", fill: "none", fillRule: "evenodd" },
             React__default['default'].createElement("circle", { stroke: "#A5A5A5", fill: "#FBFBFB", cx: "11", cy: "11", r: "10" }),
@@ -351,23 +351,23 @@ var Icon$1E = function (props) {
                 React__default['default'].createElement("tspan", { x: "7", y: "16" }, "?")))));
 };
 
-var Icon$1D = function (props) {
+var Icon$1E = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M13 19V7.83001L17.88 12.71C18.27 13.1 18.91 13.1 19.3 12.71C19.69 12.32 19.69 11.69 19.3 11.3L12.71 4.71001C12.32 4.32001 11.69 4.32001 11.3 4.71001L4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7C5.08997 13.09 5.71997 13.09 6.10997 12.7L11 7.83001V19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" })));
 };
 
-var Icon$1C = function (props) {
+var Icon$1D = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React__default['default'].createElement("path", { d: "M12 6V7.79C12 8.24 12.54 8.46 12.85 8.14L15.64 5.35C15.84 5.15 15.84 4.84 15.64 4.64L12.85 1.85C12.54 1.54 12 1.76 12 2.21V4C7.58 4 4 7.58 4 12C4 13.04 4.2 14.04 4.57 14.95C4.84 15.62 5.7 15.8 6.21 15.29C6.48 15.02 6.59 14.61 6.44 14.25C6.15 13.56 6 12.79 6 12C6 8.69 8.69 6 12 6ZM17.79 8.71C17.52 8.98 17.41 9.4 17.56 9.75C17.84 10.45 18 11.21 18 12C18 15.31 15.31 18 12 18V16.21C12 15.76 11.46 15.54 11.15 15.86L8.36 18.65C8.16 18.85 8.16 19.16 8.36 19.36L11.15 22.15C11.46 22.46 12 22.24 12 21.8V20C16.42 20 20 16.42 20 12C20 10.96 19.8 9.96 19.43 9.05C19.16 8.38 18.3 8.2 17.79 8.71Z" })));
 };
 
-var Icon$1B = function (props) {
+var Icon$1C = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 16 16" }, props),
         React__default['default'].createElement("circle", { cx: "8", cy: "8", r: "8", fill: "#F0B90B" }),
         React__default['default'].createElement("path", { d: "M5.01656 8.00006L3.79256 9.23256L2.56006 8.00006L3.79256 6.76756L5.01656 8.00006ZM8.00006 5.01656L10.1081 7.12456L11.3406 5.89206L9.23256 3.79256L8.00006 2.56006L6.76756 3.79256L4.66806 5.89206L5.90056 7.12456L8.00006 5.01656ZM12.2076 6.76756L10.9836 8.00006L12.2161 9.23256L13.4401 8.00006L12.2076 6.76756ZM8.00006 10.9836L5.89206 8.87556L4.66806 10.1081L6.77606 12.2161L8.00006 13.4401L9.23256 12.2076L11.3406 10.0996L10.1081 8.87556L8.00006 10.9836ZM8.00006 9.23256L9.23256 8.00006L8.00006 6.76756L6.76756 8.00006L8.00006 9.23256Z", fill: "#FFFDFA" })));
 };
 
-var Icon$1A = function (props) {
+var Icon$1B = function (props) {
     var theme = styled.useTheme();
     var primaryColor = theme.isDark ? "#3C3742" : "#e9eaeb";
     var secondaryColor = theme.isDark ? "#666171" : "#bdc2c4";
@@ -387,7 +387,7 @@ var Icon$1A = function (props) {
         React__default['default'].createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M71.9838 37.09L69.7348 37.0231C69.7449 36.6834 69.75 36.3423 69.75 36C69.75 35.6577 69.7449 35.3166 69.7348 34.9769L71.9838 34.91C71.9946 35.272 72 35.6354 72 36C72 36.3646 71.9946 36.728 71.9838 37.09ZM71.8544 32.7398L69.6134 32.941C69.5523 32.2603 69.471 31.5857 69.3702 30.9176L71.5949 30.5818C71.7025 31.2945 71.7892 32.014 71.8544 32.7398ZM71.2052 28.4414L69.0048 28.9115C68.8622 28.2441 68.6999 27.5841 68.5185 26.932L70.6861 26.3289C70.8798 27.0248 71.053 27.7292 71.2052 28.4414ZM70.0397 24.2525L67.9128 24.9864C67.6906 24.3424 67.4494 23.7072 67.1899 23.0815L69.2683 22.2196C69.5452 22.8874 69.8026 23.5652 70.0397 24.2525ZM68.3746 20.237L66.3524 21.2235C66.0538 20.6114 65.7373 20.0097 65.4034 19.419L67.3622 18.3119C67.7183 18.942 68.0561 19.584 68.3746 20.237ZM66.2353 16.4517L64.347 17.6751C63.977 17.104 63.5901 16.5448 63.1872 15.998L64.9984 14.6631C65.4281 15.2462 65.8407 15.8426 66.2353 16.4517ZM63.656 12.952L61.9283 14.3934C61.4925 13.8711 61.0413 13.3621 60.5752 12.8671L62.2132 11.3246C62.7102 11.8523 63.1914 12.3951 63.656 12.952ZM60.6754 9.78678L59.1329 11.4248C58.6379 10.9587 58.1289 10.5074 57.6066 10.0717L59.048 8.34397C59.6049 8.80865 60.1477 9.28984 60.6754 9.78678ZM57.3369 7.00159L56.002 8.8128C55.4552 8.40985 54.896 8.02303 54.3249 7.65302L55.5482 5.76468C56.1574 6.15933 56.7538 6.57187 57.3369 7.00159ZM53.6881 4.63782L52.581 6.5966C51.9903 6.26271 51.3886 5.94615 50.7765 5.64759L51.7629 3.62536C52.416 3.94392 53.058 4.28165 53.6881 4.63782ZM49.7804 2.7317L48.9185 4.81008C48.2928 4.55061 47.6576 4.30943 47.0136 4.08723L47.7475 1.96028C48.4348 2.19743 49.1126 2.4548 49.7804 2.7317ZM45.6711 1.31385L45.068 3.48152C44.4159 3.3001 43.7559 3.13777 43.0885 2.99517L43.5586 0.794831C44.2708 0.947003 44.9752 1.12024 45.6711 1.31385ZM41.4182 0.405049L41.0824 2.62985C40.4143 2.529 39.7397 2.44772 39.059 2.38662L39.2602 0.14563C39.986 0.210778 40.7055 0.297466 41.4182 0.405049ZM37.09 0.0161859C36.728 0.0054207 36.3646 0 36 0C35.6354 0 35.272 0.00542073 34.91 0.016186L34.9769 2.26519C35.3166 2.25509 35.6577 2.25 36 2.25C36.3423 2.25 36.6834 2.25509 37.0231 2.26519L37.09 0.0161859ZM32.7398 0.145631L32.941 2.38662C32.2603 2.44772 31.5857 2.529 30.9176 2.62985L30.5818 0.405049C31.2945 0.297467 32.014 0.210779 32.7398 0.145631ZM28.4414 0.794832L28.9115 2.99517C28.2441 3.13777 27.5841 3.3001 26.932 3.48152L26.3289 1.31386C27.0248 1.12024 27.7292 0.947004 28.4414 0.794832ZM24.2525 1.96028L24.9864 4.08723C24.3424 4.30944 23.7072 4.55061 23.0815 4.81008L22.2196 2.7317C22.8874 2.45481 23.5652 2.19743 24.2525 1.96028ZM20.237 3.62536L21.2235 5.64759C20.6114 5.94616 20.0097 6.26272 19.419 6.5966L18.3119 4.63783C18.942 4.28165 19.584 3.94392 20.237 3.62536ZM16.4517 5.76469L17.6751 7.65302C17.104 8.02303 16.5448 8.40985 15.998 8.81281L14.6631 7.00159C15.2462 6.57188 15.8426 6.15933 16.4517 5.76469ZM12.952 8.34398L14.3934 10.0717C13.8711 10.5075 13.3621 10.9587 12.8671 11.4248L11.3246 9.78679C11.8523 9.28984 12.3951 8.80865 12.952 8.34398ZM9.78678 11.3246L11.4248 12.8671C10.9587 13.3621 10.5074 13.8711 10.0717 14.3934L8.34397 12.952C8.80865 12.3951 9.28984 11.8523 9.78678 11.3246ZM7.00159 14.6631L8.8128 15.998C8.40985 16.5448 8.02303 17.104 7.65302 17.6751L5.76468 16.4518C6.15933 15.8426 6.57187 15.2462 7.00159 14.6631ZM4.63782 18.3119L6.5966 19.419C6.26271 20.0097 5.94615 20.6114 5.64759 21.2235L3.62536 20.2371C3.94392 19.584 4.28165 18.942 4.63782 18.3119ZM2.7317 22.2196L4.81008 23.0815C4.55061 23.7072 4.30943 24.3424 4.08723 24.9864L1.96028 24.2525C2.19743 23.5652 2.4548 22.8874 2.7317 22.2196ZM1.31385 26.3289L3.48152 26.932C3.3001 27.5841 3.13777 28.2441 2.99517 28.9115L0.794831 28.4414C0.947003 27.7292 1.12024 27.0248 1.31385 26.3289ZM0.405049 30.5818L2.62985 30.9176C2.529 31.5857 2.44772 32.2603 2.38662 32.941L0.14563 32.7398C0.210778 32.014 0.297466 31.2945 0.405049 30.5818ZM0.0161859 34.91C0.0054207 35.272 0 35.6354 0 36C0 36.3646 0.00542073 36.728 0.016186 37.09L2.26519 37.0231C2.25509 36.6834 2.25 36.3423 2.25 36C2.25 35.6577 2.25509 35.3166 2.26519 34.9769L0.0161859 34.91ZM0.145631 39.2602L2.38662 39.059C2.44772 39.7397 2.529 40.4143 2.62985 41.0824L0.40505 41.4182C0.297467 40.7055 0.210779 39.986 0.145631 39.2602ZM0.794833 43.5586L2.99517 43.0885C3.13777 43.7559 3.3001 44.4159 3.48152 45.068L1.31386 45.6711C1.12024 44.9752 0.947004 44.2708 0.794833 43.5586ZM1.96028 47.7475L4.08723 47.0136C4.30944 47.6576 4.55061 48.2928 4.81008 48.9185L2.7317 49.7804C2.45481 49.1126 2.19743 48.4348 1.96028 47.7475ZM3.62536 51.763L5.64759 50.7765C5.94616 51.3886 6.26272 51.9903 6.5966 52.581L4.63783 53.6881C4.28165 53.058 3.94392 52.416 3.62536 51.763ZM5.76469 55.5482L7.65302 54.3249C8.02303 54.896 8.40985 55.4552 8.81281 56.002L7.00159 57.3369C6.57188 56.7538 6.15933 56.1574 5.76469 55.5482ZM8.34398 59.048L10.0717 57.6066C10.5075 58.1289 10.9587 58.6379 11.4248 59.1329L9.78679 60.6754C9.28984 60.1477 8.80865 59.6049 8.34398 59.048ZM11.3246 62.2132L12.8671 60.5752C13.3621 61.0413 13.8711 61.4925 14.3934 61.9283L12.952 63.656C12.3951 63.1914 11.8523 62.7102 11.3246 62.2132ZM14.6631 64.9984L15.998 63.1872C16.5448 63.5901 17.104 63.977 17.6751 64.347L16.4518 66.2353C15.8426 65.8407 15.2462 65.4281 14.6631 64.9984ZM18.3119 67.3622L19.419 65.4034C20.0097 65.7373 20.6114 66.0538 21.2235 66.3524L20.2371 68.3746C19.584 68.0561 18.942 67.7184 18.3119 67.3622ZM22.2196 69.2683L23.0815 67.1899C23.7072 67.4494 24.3424 67.6906 24.9864 67.9128L24.2525 70.0397C23.5652 69.8026 22.8874 69.5452 22.2196 69.2683ZM26.3289 70.6861L26.932 68.5185C27.5841 68.6999 28.2441 68.8622 28.9115 69.0048L28.4414 71.2052C27.7292 71.053 27.0248 70.8798 26.3289 70.6861ZM30.5818 71.595L30.9176 69.3702C31.5857 69.471 32.2603 69.5523 32.941 69.6134L32.7398 71.8544C32.014 71.7892 31.2945 71.7025 30.5818 71.595ZM34.91 71.9838L34.9769 69.7348C35.3166 69.7449 35.6577 69.75 36 69.75C36.3423 69.75 36.6834 69.7449 37.0231 69.7348L37.09 71.9838C36.728 71.9946 36.3646 72 36 72C35.6354 72 35.272 71.9946 34.91 71.9838ZM39.2602 71.8544L39.059 69.6134C39.7397 69.5523 40.4143 69.471 41.0824 69.3702L41.4182 71.5949C40.7055 71.7025 39.986 71.7892 39.2602 71.8544ZM43.5586 71.2052L43.0885 69.0048C43.7559 68.8622 44.4159 68.6999 45.068 68.5185L45.6711 70.6861C44.9752 70.8798 44.2708 71.053 43.5586 71.2052ZM47.7475 70.0397L47.0136 67.9128C47.6576 67.6906 48.2928 67.4494 48.9185 67.1899L49.7804 69.2683C49.1126 69.5452 48.4348 69.8026 47.7475 70.0397ZM51.7629 68.3746L50.7765 66.3524C51.3886 66.0538 51.9903 65.7373 52.581 65.4034L53.6881 67.3622C53.058 67.7183 52.416 68.0561 51.7629 68.3746ZM55.5482 66.2353L54.3249 64.347C54.896 63.977 55.4552 63.5901 56.002 63.1872L57.3369 64.9984C56.7538 65.4281 56.1574 65.8407 55.5482 66.2353ZM59.048 63.656L57.6066 61.9283C58.1289 61.4925 58.6379 61.0413 59.1329 60.5752L60.6754 62.2132C60.1477 62.7102 59.6049 63.1914 59.048 63.656ZM62.2132 60.6754L60.5752 59.1329C61.0413 58.6379 61.4925 58.1289 61.9283 57.6066L63.656 59.048C63.1914 59.6049 62.7102 60.1477 62.2132 60.6754ZM64.9984 57.3369L63.1872 56.002C63.5901 55.4552 63.977 54.896 64.347 54.3249L66.2353 55.5482C65.8407 56.1574 65.4281 56.7538 64.9984 57.3369ZM67.3622 53.6881L65.4034 52.581C65.7373 51.9903 66.0538 51.3886 66.3524 50.7765L68.3746 51.7629C68.0561 52.416 67.7184 53.058 67.3622 53.6881ZM69.2683 49.7804L67.1899 48.9185C67.4494 48.2928 67.6906 47.6576 67.9128 47.0136L70.0397 47.7475C69.8026 48.4348 69.5452 49.1126 69.2683 49.7804ZM70.6861 45.6711L68.5185 45.068C68.6999 44.4159 68.8622 43.7559 69.0048 43.0885L71.2052 43.5586C71.053 44.2708 70.8798 44.9752 70.6861 45.6711ZM71.595 41.4182L69.3702 41.0824C69.471 40.4143 69.5523 39.7397 69.6134 39.059L71.8544 39.2602C71.7892 39.986 71.7025 40.7055 71.595 41.4182Z", fill: secondaryColor })));
 };
 
-var Icon$1z = function (props) {
+var Icon$1A = function (props) {
     styled.useTheme();
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 75  75" }, props),
         React__default['default'].createElement("g", null,
@@ -400,13 +400,13 @@ var Icon$1z = function (props) {
                 React__default['default'].createElement("path", { fill: "#ffffff", d: "M46.18,52.89l6.88-3.24a.83.83,0,0,0,.47-.75V40.25a.83.83,0,0,0-1.21-.73l-6.89,3.65a.83.83,0,0,0-.43.73v8.25A.82.82,0,0,0,46.18,52.89Z" })))));
 };
 
-var Icon$1y = function (props) {
+var Icon$1z = function (props) {
     styled.useTheme();
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 559 558" }, props),
         React__default['default'].createElement("image", { width: "559", height: "558", xlinkHref: "data:img/png;base64,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" })));
 };
 
-var Icon$1x = function (props) {
+var Icon$1y = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 100 100" }, props, { color: "#FEC300" }),
         React__default['default'].createElement("g", null,
             React__default['default'].createElement("linearGradient", { id: "SVGID_1_", gradientUnits: "userSpaceOnUse", x1: "25.8238", y1: "40.8001", x2: "70.1398", y2: "40.8001", gradientTransform: "matrix(1 -6.981316e-04 6.981316e-04 1 -0.941 5.5778)" },
@@ -425,6 +425,33 @@ var Icon$1x = function (props) {
                 React__default['default'].createElement("stop", { offset: "0", stopColor: "#FEC300" }),
                 React__default['default'].createElement("stop", { offset: "1", stopColor: "#FEC300" })),
             React__default['default'].createElement("path", { fill: "currentColor", d: "M72.1,75.9l13.4-6.3c0.6-0.3,0.9-0.8,0.9-1.5V51.2c0-0.9-0.7-1.6-1.6-1.6c-0.3,0-0.5,0.1-0.7,0.2l-13.5,7.1\n\t\tc-0.5,0.3-0.9,0.8-0.9,1.4v16.1c0,0.9,0.7,1.6,1.6,1.7C71.6,76.1,71.9,76,72.1,75.9z" }))));
+};
+
+var Icon$1x = function (props) {
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 512 512" }, props),
+        React__default['default'].createElement("g", null,
+            React__default['default'].createElement("g", null,
+                React__default['default'].createElement("g", null,
+                    React__default['default'].createElement("path", { d: "M352.459,220c0-11.046-8.954-20-20-20h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206\n\t\t\t\tC343.505,240,352.459,231.046,352.459,220z" }),
+                    React__default['default'].createElement("path", { d: "M126.459,280c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20H251.57c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20\n\t\t\t\tH126.459z" }),
+                    React__default['default'].createElement("path", { d: "M173.459,472H106.57c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40h245.889c22.056,0,40,17.944,40,40v123\n\t\t\t\tc0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V80c0-44.112-35.888-80-80-80H106.57c-44.112,0-80,35.888-80,80v352\n\t\t\t\tc0,44.112,35.888,80,80,80h66.889c11.046,0,20-8.954,20-20C193.459,480.954,184.505,472,173.459,472z" }),
+                    React__default['default'].createElement("path", { d: "M467.884,289.572c-23.394-23.394-61.458-23.395-84.837-0.016l-109.803,109.56c-2.332,2.327-4.052,5.193-5.01,8.345\n\t\t\t\tl-23.913,78.725c-2.12,6.98-0.273,14.559,4.821,19.78c3.816,3.911,9,6.034,14.317,6.034c1.779,0,3.575-0.238,5.338-0.727\n\t\t\t\tl80.725-22.361c3.322-0.92,6.35-2.683,8.79-5.119l109.573-109.367C491.279,351.032,491.279,312.968,467.884,289.572z\n\t\t\t\t M333.776,451.768l-40.612,11.25l11.885-39.129l74.089-73.925l28.29,28.29L333.776,451.768z M439.615,346.13l-3.875,3.867\n\t\t\t\tl-28.285-28.285l3.862-3.854c7.798-7.798,20.486-7.798,28.284,0C447.399,325.656,447.399,338.344,439.615,346.13z" }),
+                    React__default['default'].createElement("path", { d: "M332.459,120h-206c-11.046,0-20,8.954-20,20s8.954,20,20,20h206c11.046,0,20-8.954,20-20S343.505,120,332.459,120z" })))),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null),
+        React__default['default'].createElement("g", null)));
 };
 
 var Icon$1w = function (props) {
@@ -1183,14 +1210,14 @@ var getIcon = function (variant) {
     if (variant === void 0) { variant = variants$2.INFO; }
     switch (variant) {
         case variants$2.DANGER:
-            return Icon$1M;
-        case variants$2.WARNING:
             return Icon$1N;
-        case variants$2.SUCCESS:
+        case variants$2.WARNING:
             return Icon$1O;
+        case variants$2.SUCCESS:
+            return Icon$1P;
         case variants$2.INFO:
         default:
-            return Icon$1L;
+            return Icon$1M;
     }
 };
 var IconLabel = styled__default['default'].div(templateObject_1$T || (templateObject_1$T = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
@@ -2917,7 +2944,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
     // textSubtle: "#303133",
     textSubtle: "#000000", textSubtle2: "#2d2d2d", scroll: "#fdc702", borderColor: "#E9EAEB", disabled: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
-        bubblegum2: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
+        bubblegum2: "linear-gradient(139.73deg, rgb(184, 228, 306) 0%, rgb(243, 239, 233) 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
         blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
         violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
@@ -3214,7 +3241,7 @@ var ModalCloseButton = function (_a) {
 var ModalBackButton = function (_a) {
     var onBack = _a.onBack;
     return (React__default['default'].createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
-        React__default['default'].createElement(Icon$1J, { color: "primary" })));
+        React__default['default'].createElement(Icon$1K, { color: "primary" })));
 };
 var ModalContainer = styled__default['default'](Box)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  /* border-radius: 32px; */\n  border-radius: 9px;\n  width: 100%;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  /* border-radius: 32px; */\n  border-radius: 9px;\n  width: 100%;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
@@ -3858,7 +3885,7 @@ var Accordion = function (_a) {
         React__default['default'].createElement(MenuEntry, { onClick: handleClick, className: className, isActive: isActive },
             icon,
             React__default['default'].createElement(LinkLabelMemo, { isPushed: isPushed }, label),
-            isOpen ? React__default['default'].createElement(Icon$1G, null) : React__default['default'].createElement(Icon$1H, null)),
+            isOpen ? React__default['default'].createElement(Icon$1H, null) : React__default['default'].createElement(Icon$1I, null)),
         React__default['default'].createElement(AccordionContent, { isOpen: isOpen, isPushed: isPushed, maxHeight: React__default['default'].Children.count(children) * MENU_ENTRY_HEIGHT }, children)));
 };
 var Accordion$1 = React__default['default'].memo(Accordion, function (prev, next) { return prev.isPushed === next.isPushed && prev.isActive === next.isActive; });
@@ -4378,26 +4405,26 @@ var ResetCSS = styled.createGlobalStyle(templateObject_1 || (templateObject_1 = 
 });
 var templateObject_1;
 
-exports.AddIcon = Icon$1K;
+exports.AddIcon = Icon$1L;
 exports.Alert = Alert;
-exports.ArrowBackIcon = Icon$1J;
-exports.ArrowDownIcon = Icon$1I;
-exports.ArrowDropDownIcon = Icon$1H;
-exports.ArrowDropUpIcon = Icon$1G;
-exports.ArrowForwardIcon = Icon$1F;
+exports.ArrowBackIcon = Icon$1K;
+exports.ArrowDownIcon = Icon$1J;
+exports.ArrowDropDownIcon = Icon$1I;
+exports.ArrowDropUpIcon = Icon$1H;
+exports.ArrowForwardIcon = Icon$1G;
 exports.ArrowLastIcon = Icon$A;
-exports.ArrowUpIcon = Icon$1D;
-exports.AutoRenewIcon = Icon$1C;
+exports.ArrowUpIcon = Icon$1E;
+exports.AutoRenewIcon = Icon$1D;
 exports.BackgroundImage = BackgroundImage;
 exports.BalanceInput = BalanceInput;
 exports.BaseLayout = GridLayout$1;
-exports.BinanceIcon = Icon$1B;
-exports.BlockIcon = Icon$1M;
+exports.BinanceIcon = Icon$1C;
+exports.BlockIcon = Icon$1N;
 exports.Box = Box;
 exports.Breadcrumbs = Breadcrumbs;
-exports.BunnyPlaceholderHD = Icon$1x;
-exports.BunnyPlaceholderIcon = Icon$1A;
-exports.BunnyPlaceholderLogo = Icon$1z;
+exports.BunnyPlaceholderHD = Icon$1y;
+exports.BunnyPlaceholderIcon = Icon$1B;
+exports.BunnyPlaceholderLogo = Icon$1A;
 exports.Button = Button$1;
 exports.ButtonMenu = ButtonMenu$1;
 exports.ButtonMenuItem = ButtonMenuItem;
@@ -4412,7 +4439,7 @@ exports.Cards = Icon$1w;
 exports.CardsLayout = GridLayout;
 exports.ChartIcon = Icon$1s;
 exports.Checkbox = Checkbox;
-exports.CheckmarkCircleIcon = Icon$1O;
+exports.CheckmarkCircleIcon = Icon$1P;
 exports.CheckmarkIcon = Icon$1r;
 exports.ChevronDownIcon = Icon$1q;
 exports.ChevronIcon = Icon$1m;
@@ -4425,21 +4452,21 @@ exports.CogIcon = Icon$1k;
 exports.CommunityIcon = Icon$1j;
 exports.CopyIcon = Icon$1i;
 exports.CrownIcon = Icon$1h;
-exports.DSTLogoIcon = Icon$1y;
+exports.DSTLogoIcon = Icon$1z;
 exports.Dropdown = Dropdown;
-exports.ErrorIcon = Icon$1N;
+exports.ErrorIcon = Icon$1O;
 exports.ExpandableButton = ExpandableButton;
 exports.ExpandableLabel = ExpandableLabel;
 exports.FallingBunnies = FallingBunnies;
 exports.Flex = Flex;
 exports.Grid = Grid;
 exports.Heading = Heading;
-exports.HelpCircleIcon = Icon$1E;
+exports.HelpCircleIcon = Icon$1F;
 exports.HelpIcon = Icon$1g;
 exports.HistoryIcon = Icon$1f;
 exports.IconButton = IconButton;
 exports.Image = Image;
-exports.InfoIcon = Icon$1L;
+exports.InfoIcon = Icon$1M;
 exports.Input = Input$1;
 exports.LaurelLeftIcon = Icon$1e;
 exports.LaurelRightIcon = Icon$1d;
@@ -4516,6 +4543,7 @@ exports.VoteIcon = Icon$C;
 exports.WaitIcon = Icon$U;
 exports.WarningIcon = Icon$E;
 exports.Won = Icon$T;
+exports.WritingIcon = Icon$1x;
 exports.alertVariants = variants$2;
 exports.byTextAscending = byTextAscending;
 exports.byTextDescending = byTextDescending;
