@@ -17,6 +17,7 @@ export declare type CardTheme = {
         default: string;
         blue: string;
         violet: string;
+        voting: string;
     };
     dropShadow: string;
 };

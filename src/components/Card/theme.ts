@@ -12,6 +12,7 @@ export const light: CardTheme = {
     default: lightColors.gradients.cardHeader,
     blue: lightColors.gradients.blue,
     violet: lightColors.gradients.violet,
+    voting: lightColors.gradients.cardHeader2,
   },
   dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };
@@ -26,6 +27,7 @@ export const dark: CardTheme = {
     default: darkColors.gradients.cardHeader,
     blue: darkColors.gradients.blue,
     violet: darkColors.gradients.violet,
+    voting: darkColors.gradients.cardHeader2,
   },
   dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };

@@ -33,6 +33,7 @@ export type Gradients = {
   bubblegum: string;
   bubblegum2: string;
   cardHeader: string;
+  cardHeader2: string;
   blue: string;
   violet: string;
   violetAlt: string;
