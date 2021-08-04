@@ -1146,7 +1146,7 @@ var Icon$y = function (props) {
         React.createElement("path", { d: "M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z", fill: "black" })));
 };
 
-var IconButtonStyle = styled(IconButton)(templateObject_1$W || (templateObject_1$W = __makeTemplateObject(["\n  background-color: #fff;\n  svg {\n    fill: #000;\n  }\n"], ["\n  background-color: #fff;\n  svg {\n    fill: #000;\n  }\n"])));
+var IconButtonStyle = styled(IconButton)(templateObject_1$W || (templateObject_1$W = __makeTemplateObject(["\n  background-color: #fff;\n  @media screen and (max-width: 800px) {\n    width: 30px;\n    height: 30px;\n    border-radius: 4px;\n  }\n  svg {\n    fill: #000;\n  }\n"], ["\n  background-color: #fff;\n  @media screen and (max-width: 800px) {\n    width: 30px;\n    height: 30px;\n    border-radius: 4px;\n  }\n  svg {\n    fill: #000;\n  }\n"])));
 var ExpandableButton = function (_a) {
     var onClick = _a.onClick, expanded = _a.expanded, children = _a.children;
     return (React.createElement(IconButtonStyle, { "aria-label": "Hide or show expandable content", onClick: onClick },
@@ -1398,7 +1398,7 @@ var getBoxShadow = function (_a) {
         return theme.card.boxShadowSuccess;
     }
     if (isActive) {
-        return theme.card.boxShadowActive;
+        return theme.card.boxShadowActive2;
     }
     return theme.card.boxShadow;
 };
@@ -2688,6 +2688,7 @@ var mediaQueries$1 = {
 var shadows = {
     level1: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     active: "0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)",
+    active2: "rgb(128,121,131) 0 0 10px 1px",
     success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
     warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
     focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
@@ -2960,6 +2961,7 @@ var light$6 = {
     background: lightColors.backgroundAlt,
     boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     boxShadowActive: shadows.active,
+    boxShadowActive2: shadows.active2,
     boxShadowSuccess: shadows.success,
     boxShadowWarning: shadows.warning,
     cardHeaderBackground: {
@@ -2974,6 +2976,7 @@ var dark$6 = {
     background: darkColors.backgroundAlt,
     boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     boxShadowActive: shadows.active,
+    boxShadowActive2: shadows.active2,
     boxShadowSuccess: shadows.success,
     boxShadowWarning: shadows.warning,
     cardHeaderBackground: {

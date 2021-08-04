@@ -11,6 +11,11 @@ interface Props {
 
 const IconButtonStyle = styled(IconButton)`
   background-color: #fff;
+  @media screen and (max-width: 800px) {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+  }
   svg {
     fill: #000;
   }

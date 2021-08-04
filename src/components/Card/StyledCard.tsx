@@ -19,7 +19,7 @@ const getBoxShadow = ({ isActive, isSuccess, isWarning, theme }: StyledCardProps
   }
 
   if (isActive) {
-    return theme.card.boxShadowActive;
+    return theme.card.boxShadowActive2;
   }
 
   return theme.card.boxShadow;
