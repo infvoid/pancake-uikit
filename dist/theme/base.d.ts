@@ -5,6 +5,7 @@ export declare const breakpointMap: {
 export declare const shadows: {
     level1: string;
     active: string;
+    active2: string;
     success: string;
     warning: string;
     focus: string;
@@ -20,6 +21,7 @@ declare const _default: {
     shadows: {
         level1: string;
         active: string;
+        active2: string;
         success: string;
         warning: string;
         focus: string;

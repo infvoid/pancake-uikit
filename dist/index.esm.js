@@ -1146,7 +1146,7 @@ var Icon$y = function (props) {
         React.createElement("path", { d: "M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z", fill: "black" })));
 };
 
-var IconButtonStyle = styled(IconButton)(templateObject_1$W || (templateObject_1$W = __makeTemplateObject(["\n  background-color: #fff;\n  svg {\n    fill: #000;\n  }\n"], ["\n  background-color: #fff;\n  svg {\n    fill: #000;\n  }\n"])));
+var IconButtonStyle = styled(IconButton)(templateObject_1$W || (templateObject_1$W = __makeTemplateObject(["\n  background-color: #fff;\n  @media screen and (max-width: 800px) {\n    width: 30px;\n    height: 30px;\n    border-radius: 4px;\n  }\n  svg {\n    fill: #000;\n  }\n"], ["\n  background-color: #fff;\n  @media screen and (max-width: 800px) {\n    width: 30px;\n    height: 30px;\n    border-radius: 4px;\n  }\n  svg {\n    fill: #000;\n  }\n"])));
 var ExpandableButton = function (_a) {
     var onClick = _a.onClick, expanded = _a.expanded, children = _a.children;
     return (React.createElement(IconButtonStyle, { "aria-label": "Hide or show expandable content", onClick: onClick },
@@ -1216,7 +1216,7 @@ var Details = styled.div(templateObject_2$n || (templateObject_2$n = __makeTempl
     return (hasHandler ? withHandlerSpacing + "px" : "12px");
 });
 var CloseHandler = styled.div(templateObject_3$a || (templateObject_3$a = __makeTemplateObject(["\n  border-radius: 0 16px 16px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"], ["\n  border-radius: 0 16px 16px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"])));
-var StyledAlert = styled(Flex)(templateObject_4$7 || (templateObject_4$7 = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"], ["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"])), function (_a) {
+var StyledAlert = styled(Flex)(templateObject_4$7 || (templateObject_4$7 = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid #fff;\n"], ["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid #fff;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.alert.background;
 });
@@ -1266,7 +1266,7 @@ var getHeight = function (_a) {
             return "40px";
     }
 };
-var Input$1 = styled.input(templateObject_1$S || (templateObject_1$S = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
+var Input$1 = styled.input(templateObject_1$S || (templateObject_1$S = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 5px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 5px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 }, getBoxShadow$1, function (_a) {
@@ -1398,12 +1398,12 @@ var getBoxShadow = function (_a) {
         return theme.card.boxShadowSuccess;
     }
     if (isActive) {
-        return theme.card.boxShadowActive;
+        return theme.card.boxShadowActive2;
     }
     return theme.card.boxShadow;
 };
 /* border: ${({ theme }) => theme.card.boxShadow}; */
-var StyledCard = styled.div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  background-color: ", ";\n  border: solid 1px #d8d8d8;\n  border-radius: 6px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: solid 1px #d8d8d8;\n  border-radius: 6px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
+var StyledCard = styled.div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  background-color: ", ";\n  border: solid 1px #d8d8d8;\n  border-radius: 5px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: solid 1px #d8d8d8;\n  border-radius: 5px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.background;
 }, getBoxShadow, function (_a) {
@@ -2688,6 +2688,7 @@ var mediaQueries$1 = {
 var shadows = {
     level1: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     active: "0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)",
+    active2: "rgb(128,121,131) 0 0 10px 1px",
     success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
     warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
     focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
@@ -2932,6 +2933,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
         bubblegum2: "linear-gradient(139.73deg, rgb(184, 228, 306) 0%, rgb(243, 239, 233) 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
+        cardHeader2: "linear-gradient(139.73deg, rgb(184,228,255) 0%, rgb(243,239,233) 100%)",
         blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
         violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
@@ -2941,6 +2943,7 @@ var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), 
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         bubblegum2: "linear-gradient(139.73deg,rgb(36,35,92) 0%,rgb(0,14,43) 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
+        cardHeader2: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
         blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
         violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
         violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
@@ -2958,12 +2961,14 @@ var light$6 = {
     background: lightColors.backgroundAlt,
     boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     boxShadowActive: shadows.active,
+    boxShadowActive2: shadows.active2,
     boxShadowSuccess: shadows.success,
     boxShadowWarning: shadows.warning,
     cardHeaderBackground: {
         default: lightColors.gradients.cardHeader,
         blue: lightColors.gradients.blue,
         violet: lightColors.gradients.violet,
+        voting: lightColors.gradients.cardHeader2,
     },
     dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };
@@ -2971,12 +2976,14 @@ var dark$6 = {
     background: darkColors.backgroundAlt,
     boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     boxShadowActive: shadows.active,
+    boxShadowActive2: shadows.active2,
     boxShadowSuccess: shadows.success,
     boxShadowWarning: shadows.warning,
     cardHeaderBackground: {
         default: darkColors.gradients.cardHeader,
         blue: darkColors.gradients.blue,
         violet: darkColors.gradients.violet,
+        voting: darkColors.gradients.cardHeader2,
     },
     dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };
@@ -3229,7 +3236,7 @@ var ModalBackButton = function (_a) {
     return (React.createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
         React.createElement(Icon$1K, { color: "primary" })));
 };
-var ModalContainer = styled(Box)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  /* border-radius: 32px; */\n  border-radius: 9px;\n  width: 100%;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  /* border-radius: 32px; */\n  border-radius: 9px;\n  width: 100%;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
+var ModalContainer = styled(Box)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),\n    0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  /* border-radius: 32px; */\n  border-radius: 9px;\n  width: 100%;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n  @media screen and (max-width: 370px) {\n    width: 320px;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),\n    0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  /* border-radius: 32px; */\n  border-radius: 9px;\n  width: 100%;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n  @media screen and (max-width: 370px) {\n    width: 320px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.modal.background;
 }, function (_a) {

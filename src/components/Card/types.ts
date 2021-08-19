@@ -13,12 +13,14 @@ export type CardTheme = {
   background: string;
   boxShadow: string;
   boxShadowActive: string;
+  boxShadowActive2: string;
   boxShadowSuccess: string;
   boxShadowWarning: string;
   cardHeaderBackground: {
     default: string;
     blue: string;
     violet: string;
+    voting:string;
   };
   dropShadow: string;
 };
